@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .content-inner {
+            width: 1160px;
+            border: 1px solid tomato;
+        }
+        .detail-inner {
+            width: 600px;
+            border: 1px solid palevioletred;
+        } */
+        section[class*=inner] {
+            border: 1px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <section class="content-inner">
+        section : content-inner
+        <div class="detail-inner">
+            div : detail-inner
+        </div>
+    </section>
+</body>
+</html>
