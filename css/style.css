@@ -349,6 +349,7 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
   border-radius: 3px 0 0 3px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .overview h4 {
   font-weight: 400;
 }
@@ -358,6 +359,8 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
 }
 .overview .class-price {
 =======
+=======
+>>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
 .focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview h4 {
   font-weight: 400;
 }
@@ -366,11 +369,15 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
   color: #999999;
 }
 .focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-price {
+<<<<<<< HEAD
+>>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
+=======
 >>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
   font-size: 16px;
   word-spacing: 10px;
   margin-bottom: 5px;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 .overview .class-price .sale {
   color: #ED2040;
@@ -395,6 +402,8 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
 }
 .overview .class-review .rating::after {
 =======
+=======
+>>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
 .focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-price .sale {
   color: #ED2040;
   font-weight: 400;
@@ -417,6 +426,9 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
   color: #FFD912;
 }
 .focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-review .rating::after {
+<<<<<<< HEAD
+>>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
+=======
 >>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
   content: "|";
   color: #BDBDBD;
@@ -424,6 +436,7 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
   margin-left: 5px;
   display: inline-block;
   transform: translateY(-2px);
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 
@@ -541,6 +554,8 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
 }
 .early-bird-countdwon em:nth-of-type(3)::after {
   content: "sec";
+=======
+>>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
 =======
 >>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
 }
