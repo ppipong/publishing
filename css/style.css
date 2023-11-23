@@ -348,98 +348,47 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
   padding: 2px 8px;
   border-radius: 3px 0 0 3px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-.overview h4 {
+.overview .overview h4 {
   font-weight: 400;
 }
-.overview .class-info {
+.overview .overview .class-info {
   font-size: 13px;
   color: #999999;
 }
-.overview .class-price {
-=======
-=======
->>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
-.focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview h4 {
-  font-weight: 400;
-}
-.focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-info {
-  font-size: 13px;
-  color: #999999;
-}
-.focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-price {
-<<<<<<< HEAD
->>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
-=======
->>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
+.overview .overview .class-price {
   font-size: 16px;
   word-spacing: 10px;
   margin-bottom: 5px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-.overview .class-price .sale {
+.overview .overview .class-price .sale {
   color: #ED2040;
   font-weight: 400;
 }
-.overview .class-price .price-prev {
+.overview .overview .class-price .price-prev {
   color: #BDBDBD;
   text-decoration: line-through;
 }
-.overview .class-price .price-current {
+.overview .overview .class-price .price-current {
   font-weight: 500;
 }
-.overview .class-review {
+.overview .overview .class-review {
   font-size: 12px;
   font-weight: 400;
 }
-.overview .class-review .stars {
+.overview .overview .class-review .stars {
   word-spacing: -1px;
 }
-.overview .class-review .stars .bi {
+.overview .overview .class-review .stars .bi {
   color: #FFD912;
 }
-.overview .class-review .rating::after {
-=======
-=======
->>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
-.focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-price .sale {
-  color: #ED2040;
-  font-weight: 400;
-}
-.focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-price .price-prev {
-  color: #BDBDBD;
-  text-decoration: line-through;
-}
-.focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-price .price-current {
-  font-weight: 500;
-}
-.focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-review {
-  font-size: 12px;
-  font-weight: 400;
-}
-.focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-review .stars {
-  word-spacing: -1px;
-}
-.focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-review .stars .bi {
-  color: #FFD912;
-}
-.focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-review .rating::after {
-<<<<<<< HEAD
->>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
-=======
->>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
+.overview .overview .class-review .rating::after {
   content: "|";
   color: #BDBDBD;
   font-size: 10px;
   margin-left: 5px;
   display: inline-block;
   transform: translateY(-2px);
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-
 /* ############ section : best-class ############ */
 .best-class .best-class-inner .best-class-content .best-class-wrap {
   display: flex;
@@ -554,8 +503,4 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
 }
 .early-bird-countdwon em:nth-of-type(3)::after {
   content: "sec";
-=======
->>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
-=======
->>>>>>> 4448753e06472c02a2fc324bbb3d71f93411f365
 }
