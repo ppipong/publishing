@@ -12,8 +12,6 @@ body {
 }
 
 /* Temporary CSS */
-
-.blog,
 .slogan,
 .tip-tech,
 footer {
@@ -431,17 +429,18 @@ header {
           .overview {}
         }
       }
-    }
+}
 /* ############ section : best-class ############ */
 .best-class {
   .best-class-inner {
     .best-class-content {
-      .front-header {}
-
+      .front-header {
+      }
       .best-class-wrap {
         display: flex;
-        gap: 20px;
+        // gap: 10px;
         .invite-banner {
+          padding-right: 10px;
           img {
             width: 380px;
           }
@@ -562,6 +561,63 @@ header {
     }
     &:nth-of-type(3)::after {
       content: 'sec';
+    }
+  }
+}
+/* ############ section : blog ############ */
+.blog {
+  .blog-inner {
+    .blog-content {
+      .blog-items {
+        display: flex;
+        gap: 15px;
+        .blog-item {
+          border: 1px solid tomato;
+          .thum {
+            width: 100%;
+            cursor: pointer;
+            img {
+              width: inherit;
+              height: inherit;
+              object-fit: cover;
+              // border-radius: 5px;
+              border: 1px solid $silver-gray;
+            }
+          }
+          .desc {
+            .blog-sort {
+              font-size: 13px;
+              color: $crimson;
+            }
+            .blog-outline {
+              h4 {
+                font-size: 16px;
+              }
+              p {
+                color: $dim-black;
+                margin: 5px 0;
+              }
+            }
+          }
+          .blog-writer {
+            display: flex;
+            gap: 10px;
+            .writer-avatar {
+              img {
+                width: 50px;
+                border-radius: 50%;
+              }
+            }
+            .writer-info {
+              b {}
+              .date-comment {
+                span {}
+              }
+            }
+          }
+
+        }
+      }
     }
   }
 }

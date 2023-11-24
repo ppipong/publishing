@@ -393,7 +393,9 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
 /* ############ section : best-class ############ */
 .best-class .best-class-inner .best-class-content .best-class-wrap {
   display: flex;
-  gap: 20px;
+}
+.best-class .best-class-inner .best-class-content .best-class-wrap .invite-banner {
+  padding-right: 10px;
 }
 .best-class .best-class-inner .best-class-content .best-class-wrap .invite-banner img {
   width: 380px;
@@ -504,4 +506,42 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
 }
 .early-bird-countdwon em:nth-of-type(3)::after {
   content: "sec";
+}
+
+/* ############ section : blog ############ */
+.blog .blog-inner .blog-content .blog-items {
+  display: flex;
+  gap: 15px;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item {
+  border: 1px solid tomato;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item .thum {
+  width: 100%;
+  cursor: pointer;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item .thum img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border: 1px solid #EEEEEE;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item .desc .blog-sort {
+  font-size: 13px;
+  color: #ED2040;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item .desc .blog-outline h4 {
+  font-size: 16px;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item .desc .blog-outline p {
+  color: #555555;
+  margin: 5px 0;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item .blog-writer {
+  display: flex;
+  gap: 10px;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item .blog-writer .writer-avatar img {
+  width: 50px;
+  border-radius: 50%;
 }
