@@ -17,6 +17,10 @@ body {
 }
 
 /* Temporary CSS */
+footer {
+  display: none;
+}
+
 /* ############ Common CSS  ############ */
 section:not(.front-slider) {
   padding: 65px 0;
@@ -513,18 +517,20 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
   display: flex;
   gap: 15px;
 }
-.blog .blog-inner .blog-content .blog-items .blog-item {
-  border: 1px solid tomato;
-}
 .blog .blog-inner .blog-content .blog-items .blog-item .thum {
   width: 100%;
+  height: 200px;
   cursor: pointer;
 }
 .blog .blog-inner .blog-content .blog-items .blog-item .thum img {
   width: inherit;
   height: inherit;
   object-fit: cover;
+  border-radius: 5px;
   border: 1px solid #EEEEEE;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item .desc {
+  margin-top: 5px;
 }
 .blog .blog-inner .blog-content .blog-items .blog-item .desc .blog-sort {
   font-size: 13px;
@@ -540,8 +546,97 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
 .blog .blog-inner .blog-content .blog-items .blog-item .blog-writer {
   display: flex;
   gap: 10px;
+  margin-top: 10px;
+  align-items: center;
 }
 .blog .blog-inner .blog-content .blog-items .blog-item .blog-writer .writer-avatar img {
-  width: 50px;
+  width: 40px;
   border-radius: 50%;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item .blog-writer .writer-info {
+  font-size: 13px;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item .blog-writer .writer-info b {
+  font-weight: 500;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item .blog-writer .writer-info .date-comment {
+  margin-top: 2px;
+}
+.blog .blog-inner .blog-content .blog-items .blog-item .blog-writer .writer-info .date-comment span {
+  margin-right: 5px;
+}
+
+/* ############ section : slogan ############ */
+.slogan {
+  background-color: rgba(0, 210, 211, 0.05);
+  padding: 35px 0 !important;
+}
+.slogan .slogan-inner .slogan-content {
+  text-align: center;
+}
+.slogan .slogan-inner .slogan-content h1 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.slogan .slogan-inner .slogan-content span {
+  font-size: 20px;
+  font-weight: 400;
+}
+.slogan .slogan-inner .slogan-content span em {
+  font-style: normal;
+  text-decoration: underline;
+  color: #FF4C79;
+}
+
+/* ############ section : tip-tech ############ */
+.tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+}
+.tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items:last-child .tip-tech-item {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item {
+  display: flex;
+  flex: 1;
+  gap: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item .tip-tech-info .tip-tech-sort {
+  font-size: 12px;
+  color: #2ECC71;
+  font-weight: 500;
+}
+.tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item .tip-tech-info h3 {
+  font-size: 16px;
+}
+.tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item .tip-tech-info p {
+  margin: 0;
+}
+.tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item .thum {
+  width: 100px;
+  margin: auto 0;
+}
+.tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item .thum img {
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+  border-radius: 5px;
+  border: 1px solid #EEEEEE;
+}
+.tip-tech .tip-tech-inner .tip-tech-content .btn-tip-tech {
+  font-size: 16px;
+  font-weight: normal;
+  border: 1px solid #DDDDDD;
+  padding: 5px 25px;
+  border-radius: 30px;
+  margin: 30px auto;
+  text-align: center;
+  display: block;
+  width: min-content;
+  white-space: nowrap;
 }
