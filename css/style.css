@@ -348,40 +348,40 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
   padding: 2px 8px;
   border-radius: 3px 0 0 3px;
 }
-.overview .overview h4 {
+.overview h4 {
   font-weight: 400;
 }
-.overview .overview .class-info {
+.overview .class-info {
   font-size: 13px;
   color: #999999;
 }
-.overview .overview .class-price {
+.overview .class-price {
   font-size: 16px;
   word-spacing: 10px;
   margin-bottom: 5px;
 }
-.overview .overview .class-price .sale {
+.overview .class-price .sale {
   color: #ED2040;
   font-weight: 400;
 }
-.overview .overview .class-price .price-prev {
+.overview .class-price .price-prev {
   color: #BDBDBD;
   text-decoration: line-through;
 }
-.overview .overview .class-price .price-current {
+.overview .class-price .price-current {
   font-weight: 500;
 }
-.overview .overview .class-review {
+.overview .class-review {
   font-size: 12px;
   font-weight: 400;
 }
-.overview .overview .class-review .stars {
+.overview .class-review .stars {
   word-spacing: -1px;
 }
-.overview .overview .class-review .stars .bi {
+.overview .class-review .stars .bi {
   color: #FFD912;
 }
-.overview .overview .class-review .rating::after {
+.overview .class-review .rating::after {
   content: "|";
   color: #BDBDBD;
   font-size: 10px;
@@ -389,6 +389,7 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
   display: inline-block;
   transform: translateY(-2px);
 }
+
 /* ############ section : best-class ############ */
 .best-class .best-class-inner .best-class-content .best-class-wrap {
   display: flex;
