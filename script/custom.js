@@ -1,8 +1,8 @@
 $(function(){
 
   /* include Files */
-  $('#header-include').load('./include/header.html');
-  $('#footer-include').load('./include/footer.html');
+  $('#header-include').load('/include/header.html');
+  $('#footer-include').load('/include/footer.html');
   
   /* Scroll Header fixd  */
   $(window).scroll(function(){
