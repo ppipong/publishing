@@ -19,7 +19,7 @@ $(function(){
 
   /* early-bird-countdwon */
   $(".early-bird-countdwon")
-    .countdown("2023/11/26", function(event) {
+    .countdown("2023/11/28", function(event) {
       $(this).html(
         event.strftime('<b>종료까지</b> %D일 <em>%H</em>:<em>%M</em>:<em>%S</em> 남음')
       );
