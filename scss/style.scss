@@ -46,8 +46,14 @@ header {
   background-color: $white;
   border-bottom: 1px solid $silver-gray;
   position: relative;
+  z-index: 100;
+  width: 100%;
+  &.active {
+    position: fixed;
+    box-shadow: 0 0 5px rgba($color: $dim-black, $alpha: .2);
+  }
   .header-inner {
-    padding: 15px 0;
+    padding: 20px 0;
     .logo-search {
       display: flex;
       gap: 20px;
@@ -74,7 +80,8 @@ header {
           }
           &:focus {
             box-sizing: border-box;
-            border: 1px solid rgba($royalblue, 0.5);
+            // border: 1px solid rgba($royalblue, 0.5);
+            border-color: rgba($royalblue, 0.2);
             background-color: $white;
             box-shadow: 0 0 5px $royalblue;
           }
@@ -97,12 +104,13 @@ header {
       .login-register-buttons {
         margin-left: auto;
         // 로그인 전에 보여질
-        display: none;
+        // display: none;
         button {
           border: 1px solid $dim-gray;
           border-radius: 5px;
           padding: 5px 10px;
           background-color: transparent;
+          margin-right: 5px;
           // &.btn-login {}
           &.btn-register {
             background-color: $forestgreen;
@@ -113,6 +121,7 @@ header {
       }
       .user-alarm {
         // 로그인 후에 보여질 ui
+        display: none;
         margin-left: auto;
         span {
           margin: 0 5px;

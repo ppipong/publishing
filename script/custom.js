@@ -1,4 +1,17 @@
 $(function(){
+
+  /* include Files */
+  $('#header-include').load('./include/header.html');
+  $('#footer-include').load('./include/footer.html');
+  
+  /* Scroll Header fixd  */
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 200) {
+      $('header').addClass('active');
+    } else {
+      $('header').removeClass();
+    }
+  });
   /* Focus like */
   $('.like').click(function(){
     $(this).toggleClass('active');
