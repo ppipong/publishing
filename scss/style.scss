@@ -715,14 +715,36 @@ header {
 }
 /* ############ footer ############ */
 footer {
+  background-color: $dim-black;
+  padding: 60px 0;
+  font-size: 13px;
+  * {
+    color: $dark-gray;
+  }
   .footer-inner {
-    .footer-slogan {
-      h2 {}
-    }
-    .lnb {
-      .link-item {
-        .link-item-title {}
+    .lnb-wrap {
+      display: flex;
+      .footer-slogan {
+        h2 {}
+        .lnb {
+          // display: flex;
+          .link-item {
+            .link-item-title {}
+            .link-item-content {
+              a {}
+            }
+          }
+        }
       }
+      .copyright-wrap {
+        address {
+          p {}
+        }
+        .sns {
+          a {}
+        }
+      }
+
     }
   }
 }
