@@ -57,5 +57,10 @@ $(function(){
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
   });
+  /* paging buttons */
+  $('.btn-paging').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+  });
 
 });
