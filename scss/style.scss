@@ -328,7 +328,7 @@ header {
   .focus-class-inner {
     .focus-class-content {
       margin-bottom: 40px;
-      .focus-class-items {
+      @at-root.focus-class-items {
         // display: flex;
         // flex-wrap: wrap;
         cursor: pointer;
