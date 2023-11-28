@@ -1,5 +1,4 @@
 $(function(){
-
   /* include Files */
   $('#header-include').load('/beyond/include/header.html', function(){
     /* header navi magamenu */
@@ -10,8 +9,8 @@ $(function(){
       $('.mega-navi').stop().slideUp();
     });
   });
-
   $('#footer-include').load('/beyond/include/footer.html');
+
   /* Scroll Header fixd  */
   $(window).scroll(function(){
     if($(this).scrollTop() > 200) {
@@ -51,6 +50,12 @@ $(function(){
     slidesToScroll: 2, // 슬라이드 할때 보이는 개수
     arrows : true,
     dots : false
+  });
+
+  /* category Detail buttons */
+  $('.btn-shortcut').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
   });
 
 });

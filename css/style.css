@@ -61,7 +61,7 @@ header.active {
   box-shadow: 0 0 5px rgba(85, 85, 85, 0.2);
 }
 header .header-inner {
-  padding: 20px 0;
+  padding: 20px 0 0 0;
 }
 header .header-inner .logo-search {
   display: flex;
@@ -151,7 +151,7 @@ header .header-inner .logo-search .user-alarm .avater img {
   border-radius: 50%;
 }
 header .header-inner .gnb {
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -699,5 +699,96 @@ footer .footer-inner .copyright-wrap .sns a .bi {
   margin: 3px;
 }
 footer .footer-inner .copyright-wrap .sns a .bi:hover {
+  color: #FFFFFF;
+}
+
+/* ############ Category Main ############ */
+.category-class .category-class-inner .category-class-main {
+  height: 120px;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.category-class .category-class-inner .category-class-main h2 {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #FFFFFF;
+  font-family: "SpoqaHanSansNeo-Regular";
+}
+.category-class .category-class-inner .category-class-main img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.category-class .category-class-inner .category-class-detail {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.category-class .category-class-inner .category-class-detail h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.category-class .category-class-inner .category-class-detail .category-shortcut-btn-group .btn-shortcut {
+  background-color: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  border-radius: 15px;
+  padding: 5px 15px;
+  margin-right: 7px;
+}
+.category-class .category-class-inner .category-class-detail .category-shortcut-btn-group .btn-shortcut.active {
+  background-color: #333333;
+  color: #FFFFFF;
+  border: 1px solid #333333;
+}
+.category-class .category-class-inner .category-class-sort {
+  margin: 30px 0;
+}
+.category-class .category-class-inner .category-class-sort > * {
+  font-size: 14px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+  height: 40px;
+  width: 110px;
+  margin-right: 3px;
+  text-align: center;
+}
+.category-class .category-class-inner .category-class-sort select {
+  appearance: none;
+  background: url("../images/icon-select.svg") no-repeat center right 10px;
+  background-size: 12px;
+}
+.category-class .category-class-inner .category-class-sort button {
+  background-color: transparent;
+  border-radius: 3px;
+}
+.category-class .category-class-inner .category-class-sort button.btn-earybird {
+  border-color: #FF4C79;
+  color: #FF4C79;
+}
+.category-class .category-class-inner .paging {
+  border: 1px solid tomato;
+  display: flex;
+  justify-content: center;
+}
+.category-class .category-class-inner .paging button {
+  background-color: transparent;
+  border: none;
+}
+.category-class .category-class-inner .paging > button {
+  margin: 0 10px;
+  font-size: 18px;
+  transform: translateY(-3px);
+}
+.category-class .category-class-inner .paging .btn-paging-group .btn-paging {
+  background-color: #fff;
+}
+.category-class .category-class-inner .paging .btn-paging-group .btn-paging.active {
+  background-color: #333333;
+  border-radius: 3px;
   color: #FFFFFF;
 }

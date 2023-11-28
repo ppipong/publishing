@@ -53,7 +53,7 @@ header {
     box-shadow: 0 0 5px rgba($color: $dim-black, $alpha: .2);
   }
   .header-inner {
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     .logo-search {
       display: flex;
       gap: 20px;
@@ -162,7 +162,7 @@ header {
       }
     }
     .gnb {
-      height: 50px;
+      height: 70px;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -786,5 +786,107 @@ footer {
         }
       }
     }
+  }
+}
+
+/* ############ Category Main ############ */
+.category-class {
+  .category-class-inner {
+    .category-class-main {
+      height: 120px;
+      width: 100%;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      h2 {
+        position: absolute;
+        left: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: $white;
+        font-family: $secondary-kr;
+      }
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+    .category-class-detail {
+      margin-top: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid $dim-gray;
+      h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .category-shortcut-btn-group {
+        .btn-shortcut {
+          background-color: $white;
+          border: 1px solid $dark-gray;
+          border-radius: 15px;
+          padding: 5px 15px;
+          margin-right: 7px;
+          &.active {
+            background-color: $dark-black;
+            color: $white;
+            border: 1px solid $dark-black;
+          }
+        }
+      }
+    }
+    .category-class-sort {
+      > * {
+        font-size: 14px;
+        border: 1px solid $silver-gray;
+        cursor: pointer;
+        height: 40px;
+        width: 110px;
+        margin-right: 3px;
+        text-align: center;
+      }
+      margin: 30px 0;
+      select {
+        appearance: none;
+        background: url('../images/icon-select.svg') no-repeat center right 10px;
+        background-size: 12px;
+      }
+      button {
+        background-color: transparent;
+        border-radius: 3px;
+        &.btn-earybird {
+          border-color: $tomato;
+          color: $tomato;
+        }
+      }
+    }
+    .category-class-wrap {
+    }
+    .paging {
+      border: 1px solid tomato;
+      display: flex;
+      justify-content: center;
+      button {
+        background-color: transparent;
+        border: none;
+      }
+      > button {
+        margin: 0 10px;
+        font-size: 18px;
+        transform: translateY(-3px);
+      }
+      .btn-paging-group {
+        .btn-paging {
+          background-color: #fff;
+          &.active {
+            background-color: $dark-black;
+            border-radius: 3px;
+            color: $white;
+          }
+        }
+      }
+    }
+
   }
 }
