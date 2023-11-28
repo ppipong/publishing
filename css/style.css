@@ -200,12 +200,21 @@ header .mega-navi .mega-navi-inner .mega-navi-item {
   line-height: 1.8em;
   flex: 1;
 }
+header .mega-navi .mega-navi-inner .mega-navi-item b {
+  color: #FFFFFF;
+  font-weight: 500;
+}
 header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a {
   display: block;
   color: #BDBDBD;
 }
 header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover {
   text-decoration: underline;
+}
+
+/* ############ container ############ */
+.container {
+  min-height: 1000px;
 }
 
 /* ############ section : front-slider ############ */

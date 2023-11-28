@@ -212,6 +212,8 @@ header {
         line-height: 1.8em;
         flex: 1;
         b {
+          color: $white;
+          font-weight: 500;
         }
         .mega-navi-item-wrap {
           a {
@@ -226,7 +228,10 @@ header {
     }
   }
 }
-
+/* ############ container ############ */
+.container {
+  min-height: 1000px;
+}
 /* ############ section : front-slider ############ */
 .front-slider {
   .front-slider-items {

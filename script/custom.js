@@ -1,9 +1,17 @@
 $(function(){
 
   /* include Files */
-  $('#header-include').load('/include/header.html');
-  $('#footer-include').load('/include/footer.html');
-  
+  $('#header-include').load('/beyond/include/header.html', function(){
+    /* header navi magamenu */
+    $('.trigger').click(function(){
+      $('.mega-navi').stop().slideToggle();
+    });
+    $('section').click(function(){
+      $('.mega-navi').stop().slideUp();
+    });
+  });
+
+  $('#footer-include').load('/beyond/include/footer.html');
   /* Scroll Header fixd  */
   $(window).scroll(function(){
     if($(this).scrollTop() > 200) {
