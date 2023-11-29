@@ -794,3 +794,144 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   border-radius: 3px;
   color: #FFFFFF;
 }
+
+/* ############ tack-course Main ############ */
+.take-course {
+  background-color: #F5F5F5;
+}
+.take-course .take-course-inner {
+  display: flex;
+  gap: 30px;
+}
+.take-course .take-course-inner > div {
+  min-height: 600px;
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(85, 85, 85, 0.2);
+}
+.take-course .take-course-inner .cart-wrap {
+  flex: 1;
+}
+.take-course .take-course-inner .cart-wrap .payment-headline {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.take-course .take-course-inner .cart-wrap .cart-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.take-course .take-course-inner .cart-wrap .cart-header span {
+  font-weight: 400;
+}
+.take-course .take-course-inner .cart-wrap .cart-header span input[type=checkbox].cart-chk-all {
+  width: 18px;
+  height: 18px;
+  accent-color: #FD5631;
+  transform: translateY(3px);
+  margin-right: 5px;
+}
+.take-course .take-course-inner .cart-wrap .cart-header span em {
+  font-style: normal;
+  color: #FD5631;
+}
+.take-course .take-course-inner .cart-wrap .cart-header .btn-all-clear {
+  font-size: 13px;
+  border: 1px solid #DDDDDD;
+  background-color: transparent;
+  border-radius: 3px;
+}
+.take-course .take-course-inner .cart-wrap .cart-header .btn-all-clear:hover {
+  background: #FD5631;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item {
+  display: flex;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 15px 0;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item:last-child {
+  border: none;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .check-status {
+  width: 30px;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .check-status input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  accent-color: #FD5631;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .thum {
+  width: 170px;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .thum img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview {
+  flex: 1;
+  padding-left: 15px;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-header {
+  display: flex;
+  justify-content: space-between;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-header h4 {
+  font-size: 14px;
+  color: #ED2040;
+  font-weight: 400;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-header .btn-clear {
+  background-color: transparent;
+  border: none;
+  font-size: 1.1em;
+  color: #EEEEEE;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail {
+  display: flex;
+  gap: 15px;
+  min-height: 80px;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail .cart-overview-info {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail .cart-overview-info .class-subject {
+  font-size: 14px;
+  font-weight: 500;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail .cart-overview-info .mentor-info {
+  display: block;
+  font-size: 13px;
+  color: #999999;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail .cart-overview-info .mentor-info em {
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 10px;
+  color: #2ECC71;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail .cart-overview-price {
+  text-align: right;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail .cart-overview-price div .sale {
+  color: #FD5631;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail .cart-overview-price div .price-prev {
+  color: #999999;
+}
+.take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail .cart-overview-price .price-current {
+  font-size: 16px;
+  font-weight: 500;
+}
+.take-course .take-course-inner .payment {
+  width: 330px;
+}

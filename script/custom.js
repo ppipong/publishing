@@ -19,7 +19,7 @@ $(function(){
       $('header').removeClass();
     }
   });
-  
+
   /* Focus like */
   $('.like').click(function(){
     $(this).toggleClass('active');
@@ -63,5 +63,10 @@ $(function(){
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
   });
+  /* cart-chk input */
+  $('.cart-chk-all').click(function(){
+    
+  });
+
 
 });
