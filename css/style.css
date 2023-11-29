@@ -770,8 +770,10 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   border-color: #FF4C79;
   color: #FF4C79;
 }
+.category-class .category-class-inner .category-class-wrap .focus-class-items {
+  margin-bottom: 40px;
+}
 .category-class .category-class-inner .paging {
-  border: 1px solid tomato;
   display: flex;
   justify-content: center;
 }

@@ -19,6 +19,7 @@ $(function(){
       $('header').removeClass();
     }
   });
+  
   /* Focus like */
   $('.like').click(function(){
     $(this).toggleClass('active');

@@ -862,9 +862,11 @@ footer {
       }
     }
     .category-class-wrap {
+      .focus-class-items {
+        margin-bottom: 40px;
+      }
     }
     .paging {
-      border: 1px solid tomato;
       display: flex;
       justify-content: center;
       button {
