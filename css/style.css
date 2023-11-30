@@ -935,3 +935,21 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
 .take-course .take-course-inner .payment {
   width: 330px;
 }
+.take-course .take-course-inner .payment .price-total-wrap > div {
+  display: flex;
+  justify-content: space-between;
+}
+.take-course .take-course-inner .payment .price-total-wrap > div b {
+  margin: auto 0;
+  font-weight: 400;
+}
+.take-course .take-course-inner .payment .price-total-wrap > div em {
+  font-style: normal;
+}
+.take-course .take-course-inner .payment .price-total-wrap .current-price span em {
+  font-size: 20px;
+  color: #2ECC71;
+}
+.take-course .take-course-inner .payment .price-total-wrap .discount-amount span em {
+  color: #FD5631;
+}

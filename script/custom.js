@@ -65,7 +65,11 @@ $(function(){
   });
   /* cart-chk input */
   $('.cart-chk-all').click(function(){
-    
+    if($(this).prop("checked")) {
+      $('.cart-chk').prop("checked", true);
+    } else {
+      $('.cart-chk').prop("checked", false);
+    }
   });
 
 

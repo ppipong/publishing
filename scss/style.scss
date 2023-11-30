@@ -1037,6 +1037,43 @@ footer {
 
     .payment {
       width: 330px;
+      .price-total-wrap {
+        // .payment-headline {}
+        > div {
+          display: flex;
+          justify-content: space-between;
+          b {
+            margin: auto 0;
+            font-weight: 400;
+          }
+          em {
+            font-style: normal;
+          }
+        }
+        .current-price {
+          span {
+            em {
+              font-size: 20px;
+              color: $forestgreen;
+            }
+          }
+        }
+        .origin-price {
+          span {
+            em {
+            }
+          }
+        }
+        .discount-amount {
+          b {}
+          span {
+            em {
+              color: $orangered;
+            }
+          }
+        }
+      }
+      
     }
   }
 }
