@@ -898,6 +898,7 @@ footer {
   .take-course-inner {
     display: flex;
     gap: 30px;
+    
     > div {
       min-height: 600px;
       padding: 30px;
@@ -907,9 +908,9 @@ footer {
     }
     .cart-wrap {
       flex: 1;
-      .payment-headline {
+      @at-root .payment-headline {
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
       }
       .cart-header {
         display: flex;
@@ -937,11 +938,6 @@ footer {
           border: 1px solid $dim-gray;
           background-color: transparent;
           border-radius: 3px;
-          &:hover {
-            background: $orangered;
-            color: $white;
-            border: 1px solid transparent;
-          }
         }
       }
       .cart-items {
@@ -1036,9 +1032,17 @@ footer {
     }
 
     .payment {
-      width: 330px;
+      flex-basis: 33;
+      font-size: 16px;
+      max-height: 650px;
+      // .payment-headline {}
+      > div {
+        margin-bottom: 30px;
+      }
+      .headline {
+        margin-bottom: 10px;
+      }
       .price-total-wrap {
-        // .payment-headline {}
         > div {
           display: flex;
           justify-content: space-between;
@@ -1051,6 +1055,9 @@ footer {
           }
         }
         .current-price {
+          border-bottom: 1px solid $silver-gray;
+          margin-bottom: 15px;
+          padding-bottom: 10px;
           span {
             em {
               font-size: 20px;
@@ -1058,22 +1065,79 @@ footer {
             }
           }
         }
-        .origin-price {
-          span {
-            em {
-            }
+        // .origin-price {}
+        .discount-amount {
+          em {
+            color: $orangered;
           }
         }
-        .discount-amount {
-          b {}
-          span {
-            em {
-              color: $orangered;
+      }
+      .mobile-confirm-wrap {
+        > div {
+          display: flex;
+          gap: 5px;
+        }
+        input[type=tel] {
+            border: 1px solid $silver-gray;
+            border-radius: 3px;
+            padding: 5px;
+            &::placeholder {
+              font-size: 12px;
+              color: $light-black;
+            }
+          }
+          .btn-request {
+            border: 1px solid $dim-gray;
+            border-radius: 3px;
+            padding: 5px;
+            background-color: transparent;
+          }
+      }
+      .payment-method-wrap {
+        > div {
+          margin-bottom: 5px;
+          .free-interest {
+            font-size: 12px;
+            font-weight: 400;
+            color: $orangered;
+            margin-left: 3px;
+          }
+          label {
+            cursor: pointer;
+            input[type="radio"] {
+              display: none;
+              + em {
+                // border: 1px solid tomato;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-right: 3px;
+                transform: translateY(3px);
+                background: url('/beyond/images/icon-custom-radio.png') no-repeat;
+                background-position: left;
+              }
+              &:checked + em {
+                background-position: right;
+              }
+            }
+            img {
+              height: 20px;
+              margin-right: 5px;
+              transform: translateY(3px);
             }
           }
         }
       }
-      
+      .btn-payment-final {
+        background-color: $orangered;
+        border: none;
+        width: 100%;
+        color: $white;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 10px;
+      }
     }
+
   }
 }

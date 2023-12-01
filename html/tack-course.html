@@ -27,7 +27,7 @@
         <div class="cart-wrap">
           <h2 class="payment-headline">수강신청 장바구니</h2>
           <div class="cart-header">
-            <span><input type="checkbox" class="cart-chk-all" checked>전체선택<em>4</em>/4</span>
+            <span><input type="checkbox" class="cart-chk-all" checked>전체선택<em id="chk-item-count">4</em>/4</span>
             <button class="btn-all-clear">전체삭제</button>
           </div>
           <div class="cart-items">
@@ -195,16 +195,38 @@
           <div class="payment-method-wrap">
             <h2 class="headline">결제 수단</h2>
             <div>
-              <label for="">카드 전자결제</label>
-              <input type="radio">
-              <em>무이자 할부 지원</em>
-              <img src="" alt="">
+              <label>
+                <input type="radio" name="payment-method"><em></em>카드 전자결제
+                <b class="free-interest">무이자 할부 지원</b>
+              </label>
             </div>
             <div>
-              <label for="">카드 전자결제</label>
-              <input type="radio">
-              <em>무이자 할부 지원</em>
-              <img src="" alt="">
+              <label>
+                <input type="radio" name="payment-method"><em></em>휴대폰 결제
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="payment-method"><em></em>계좌이체
+              </label>
+            </div>
+            <div>
+              <label>
+                <img src="/beyond/images/ct-payment-naver.png" alt="">
+                <input type="radio" name="payment-method"><em></em>네이버페이
+              </label>
+            </div>
+            <div>
+              <label>
+                <img src="/beyond/images/ct-payment-kakao.png" alt="kakao">
+                <input type="radio" name="payment-method"><em></em>카카오페이
+              </label>
+            </div>
+            <div>
+              <label>
+                <img src="/beyond/images/ct-payment-toss.png" alt="toss">
+                <input type="radio" name="payment-method"><em></em>토스페이
+              </label>
             </div>
           </div>
           <button class="btn-payment-final">결제하기</button>

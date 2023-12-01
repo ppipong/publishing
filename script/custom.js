@@ -63,13 +63,28 @@ $(function(){
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
   });
+  
+  /* btn-clear & btn-all-clear */
+  // 갯수 카운터 만들기
+  // $('#chk-item-count').clidren().length;
+
+  $('.cart-item .btn-clear').click(function(){
+    // $(this).parents('.cart-item').fadeOut(90);
+    $(this).parents('.cart-item').remove();
+  });
+  $('.cart-wrap .btn-all-clear').click(function(){
+    // $('.cart-items').hide();
+    $('.cart-items').remove();
+  });
+
   /* cart-chk input */
   $('.cart-chk-all').click(function(){
     if($(this).prop("checked")) {
-      $('.cart-chk').prop("checked", true);
+      $('.check-status .cart-chk').prop("checked", true);
     } else {
-      $('.cart-chk').prop("checked", false);
+      $('.check-status .cart-chk').prop("checked", false);
     }
+    // attr과 prop
   });
 
 
