@@ -1022,3 +1022,72 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   border-radius: 5px;
   padding: 10px;
 }
+
+/* ############ member-account : member-register ############ */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup .member-register {
+  border: 1px solid tomato;
+  width: 360px;
+}
+.signup .member-register .member-account {
+  text-align: center;
+}
+.signup .member-register .member-account .login-slogan {
+  font-family: "SpoqaHanSansNeo-Regular";
+  font-weight: 600;
+  font-size: 20px;
+}
+.signup .member-register .member-account .login-slogan em {
+  font-style: normal;
+  color: #006BE5;
+}
+.signup .member-register .member-account img {
+  margin: 20px auto;
+}
+.signup .member-register .login-field div {
+  position: relative;
+  margin: 15px 0;
+}
+.signup .member-register .login-field div .bi {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.signup .member-register .login-field div input[type=text],
+.signup .member-register .login-field div input[type=email],
+.signup .member-register .login-field div input[type=password] {
+  border: 1px solid #DDDDDD;
+  width: 100%;
+  border-radius: 5px;
+  padding: 13px;
+}
+.signup .member-register .login-field .btn-member-primary {
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+  background-color: #2ECC71;
+  color: #FFFFFF;
+  font-size: 16px;
+  border: none;
+}
+.signup .member-register .agreement {
+  text-align: center;
+  font-size: 12px;
+  color: #777777;
+  margin: 20px 0;
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 20px;
+}
+.signup .member-register .login-member {
+  text-align: center;
+  font-size: 13px;
+  color: #777777;
+}
+.signup .member-register .login-member a {
+  text-decoration: underline;
+}

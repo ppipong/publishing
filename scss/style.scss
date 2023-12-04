@@ -1138,6 +1138,75 @@ footer {
         padding: 10px;
       }
     }
-
+  }
+}
+/* ############ member-account : member-register ############ */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .member-register {
+    border: 1px solid tomato;
+    width: 360px;
+    .member-account {
+      text-align: center;
+      .login-slogan {
+        font-family: $secondary-kr;
+        font-weight: 600;
+        font-size: 20px;
+        em {
+          font-style: normal;
+          color: $royalblue;
+        }
+      }
+      img {
+        margin: 20px auto;
+      }
+    }
+    .login-field {
+      div {
+        position: relative;
+        margin: 15px 0;
+        .bi {
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          border: 1px solid $dim-gray;
+          width: 100%;
+          border-radius: 5px;
+          padding: 13px;
+        }
+      }
+      .btn-member-primary {
+        width: 100%;
+        padding: 13px;
+        border-radius: 5px;
+        background-color: $forestgreen;
+        color: $white;
+        font-size: 16px;
+        border: none;
+      }
+    }
+    .agreement {
+      text-align: center;
+      font-size: 12px;
+      color: $silver-black;
+      margin: 20px 0;
+      border-bottom: 1px solid $dim-gray;
+      padding-bottom: 20px;
+    }
+    .login-member {
+      text-align: center;
+      font-size: 13px;
+      color: $silver-black;
+      a {
+        text-decoration: underline;
+      }
+    }
   }
 }
