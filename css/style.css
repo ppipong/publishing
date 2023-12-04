@@ -1030,43 +1030,54 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   align-items: center;
 }
 .signup .member-register {
-  border: 1px solid tomato;
   width: 360px;
 }
 .signup .member-register .member-account {
   text-align: center;
 }
-.signup .member-register .member-account .login-slogan {
+.login-slogan {
   font-family: "SpoqaHanSansNeo-Regular";
   font-weight: 600;
   font-size: 20px;
 }
-.signup .member-register .member-account .login-slogan em {
+.login-slogan em {
   font-style: normal;
   color: #006BE5;
 }
+
 .signup .member-register .member-account img {
   margin: 20px auto;
 }
-.signup .member-register .login-field div {
+.login-field div {
   position: relative;
   margin: 15px 0;
 }
-.signup .member-register .login-field div .bi {
+.login-field div .bi {
   position: absolute;
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
-.signup .member-register .login-field div input[type=text],
-.signup .member-register .login-field div input[type=email],
-.signup .member-register .login-field div input[type=password] {
+.login-field div input[type=text],
+.login-field div input[type=email],
+.login-field div input[type=password] {
   border: 1px solid #DDDDDD;
   width: 100%;
   border-radius: 5px;
   padding: 13px;
 }
-.signup .member-register .login-field .btn-member-primary {
+.login-field div input[type=text]::placeholder,
+.login-field div input[type=email]::placeholder,
+.login-field div input[type=password]::placeholder {
+  color: #BDBDBD;
+}
+.login-field div input[type=text]:focus,
+.login-field div input[type=email]:focus,
+.login-field div input[type=password]:focus {
+  border: 1px solid #2ECC71;
+}
+.login-field .btn-member-primary {
   width: 100%;
   padding: 13px;
   border-radius: 5px;
@@ -1075,6 +1086,7 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   font-size: 16px;
   border: none;
 }
+
 .signup .member-register .agreement {
   text-align: center;
   font-size: 12px;
@@ -1083,11 +1095,83 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   border-bottom: 1px solid #DDDDDD;
   padding-bottom: 20px;
 }
+.signup .member-register .agreement label {
+  cursor: pointer;
+}
+.signup .member-register .agreement label input[type=checkbox] {
+  display: none;
+}
+.signup .member-register .agreement label input[type=checkbox]:checked + em::before {
+  content: "\f26d";
+}
+.signup .member-register .agreement label em:before {
+  content: "\f584";
+  font-family: bootstrap-icons;
+  font-style: normal;
+  display: inline-block;
+  margin-right: 3px;
+  transform: translateY(2px);
+  font-size: 12px;
+  color: #777777;
+}
 .signup .member-register .login-member {
   text-align: center;
   font-size: 13px;
-  color: #777777;
+  color: #555555;
 }
 .signup .member-register .login-member a {
   text-decoration: underline;
+}
+
+/* ############ Login modal : member-login-overlay ############ */
+.member-login-overlay {
+  position: fixed;
+  background-color: rgba(51, 51, 51, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.member-login-overlay .member-login {
+  border: 1px solid tomato;
+  width: 360px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 15px;
+}
+.member-login-overlay .member-login .join-member {
+  font-size: 13px;
+  text-align: center;
+  margin: 10px 0;
+}
+.member-login-overlay .member-login .join-member a {
+  text-decoration: underline;
+}
+.member-login-overlay .member-login .easy-login .btn-easy-login {
+  border: 1px solid tomato;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.member-login-overlay .member-login .easy-login .btn-easy-login.kakao {
+  background-color: #FFD912;
+}
+.member-login-overlay .member-login .easy-login .btn-easy-login.facebook {
+  background-color: #006BE5;
+}
+.member-login-overlay .member-login .easy-login .btn-easy-login.apple {
+  background-color: #000000;
+}
+.member-login-overlay .member-login .easy-login .btn-easy-login.email {
+  color: #000000;
+  border: 1px solid #000000;
 }

@@ -87,5 +87,17 @@ $(function(){
     // attr과 prop
   });
 
+  /* toggle-pw */
+  $('.toggle-pw').click(function(){
+    // toggle icon shape
+    $(this).toggleClass('bi-eye');
+    // toggle input type
+    var inputType = $(this).parent().children('input').attr('type');
+    if(inputType == 'password') {
+      $(this).parent().children('input').attr('type', 'text');
+    } else {
+      $(this).parent().children('input').attr('type', 'password');
+    }
+  });
 
 });

@@ -328,7 +328,7 @@ header {
   .focus-class-inner {
     .focus-class-content {
       margin-bottom: 40px;
-      @at-root.focus-class-items {
+      @at-root .focus-class-items {
         // display: flex;
         // flex-wrap: wrap;
         cursor: pointer;
@@ -388,7 +388,7 @@ header {
               border-radius: 3px 0 0 3px;
             }
           }
-          @at-root.overview {
+          @at-root .overview {
             h4 {
               font-weight: 400;
             }
@@ -1146,11 +1146,10 @@ footer {
   justify-content: center;
   align-items: center;
   .member-register {
-    border: 1px solid tomato;
     width: 360px;
     .member-account {
       text-align: center;
-      .login-slogan {
+      @at-root .login-slogan {
         font-family: $secondary-kr;
         font-weight: 600;
         font-size: 20px;
@@ -1163,7 +1162,7 @@ footer {
         margin: 20px auto;
       }
     }
-    .login-field {
+    @at-root .login-field {
       div {
         position: relative;
         margin: 15px 0;
@@ -1172,6 +1171,7 @@ footer {
           right: 15px;
           top: 50%;
           transform: translateY(-50%);
+          cursor: pointer;
         }
         input[type="text"],
         input[type="email"],
@@ -1180,6 +1180,12 @@ footer {
           width: 100%;
           border-radius: 5px;
           padding: 13px;
+          &::placeholder {
+            color: $dark-gray;
+          }
+          &:focus {
+            border: 1px solid $forestgreen;
+          }
         }
       }
       .btn-member-primary {
@@ -1199,14 +1205,98 @@ footer {
       margin: 20px 0;
       border-bottom: 1px solid $dim-gray;
       padding-bottom: 20px;
+      label {
+        cursor: pointer;
+        input[type="checkbox"] {
+          display: none;
+          &:checked + em::before {
+            content: '\F26D';
+          }
+        }
+        em:before {
+          content : '\F584';
+          font-family: $bs-font;
+          font-style: normal;
+          display: inline-block;
+          margin-right: 3px;
+          transform: translateY(2px);
+          font-size: 12px;
+          color: $silver-black;
+        }
+      }
     }
     .login-member {
       text-align: center;
       font-size: 13px;
-      color: $silver-black;
+      color: $dim-black;
       a {
         text-decoration: underline;
       }
     }
+  }
+}
+/* ############ Login modal : member-login-overlay ############ */
+.member-login-overlay {
+  position: fixed;
+  background-color: rgba($color: $dark-black, $alpha: 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  .member-login {
+    border: 1px solid tomato;
+    width: 360px;
+    background-color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 15px;
+    .member-account {
+      // .login-slogan { em {} }
+    }
+    .login-field {
+      div {
+        input[type=email],
+        input[type=password] {}
+        .bi {}
+      }
+    }
+    .join-member {
+      font-size: 13px;
+      text-align: center;
+      margin: 10px 0;
+      a { text-decoration: underline;}
+    }
+    .easy-login {
+      .btn-easy-login {
+        border: 1px solid tomato;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        padding: 13px;
+        border-radius: 5px;
+        color: $white;
+        font-weight: 500;
+        &.kakao {
+          background-color: $orange;
+        }
+        &.facebook {
+          background-color: $royalblue;
+        }
+        &.apple {
+          background-color: $black;
+        }
+        .or {}
+        &.email {
+          color: $black;
+          border: 1px solid $black;
+        }
+      }
+    }
+    .login-notice {}
+    .btn-modal-close {}
   }
 }
