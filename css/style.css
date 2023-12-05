@@ -1218,3 +1218,13 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   font-size: 1em;
   background-color: transparent;
 }
+
+/* ############ class-detail Main ############ */
+.class-detail .class-detail-image {
+  display: block;
+  position: relative;
+}
+.class-detail .class-detail-image .class-detail-image-inner .cover-image img {
+  width: 100%;
+  background-size: cover;
+}

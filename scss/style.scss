@@ -788,7 +788,6 @@ footer {
     }
   }
 }
-
 /* ############ Category Main ############ */
 .category-class {
   .category-class-inner {
@@ -1335,6 +1334,46 @@ footer {
       border: none;
       font-size: 1em;
       background-color: transparent;
+    }
+  }
+}
+/* ############ class-detail Main ############ */
+.class-detail {
+  .class-detail-image {
+    display: block;
+    position: relative;
+    .class-detail-image-inner {
+      .heading {
+        h1 {}
+        p {}
+      }
+      .cover-image {
+        
+        img {
+          width: 100%;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  .class-detail-full {
+    .class-detail-full-inner {
+      .class-detail-full-content {
+        .class-detail-info {
+          .class-detail-navigation {
+            a {}
+          }
+          .class-introduce {}
+          .class-curriculum {}
+          .class-review {}
+          .class-faq {}
+          .class-mentor {}
+        }
+        .class-detail-sidebar {
+          .class-required-info {}
+          .class-detail-banner {}
+        }
+      }
     }
   }
 }

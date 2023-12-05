@@ -23,14 +23,14 @@ $(function(){
     });
 
     /* header login modal : open, hidden*/
-    $('.btn-login,').click(function(){
+    $('.btn-login').click(function(){
       $('.member-login-overlay').fadeIn();
     });
     $('.btn-modal-close').click(function(){
       $('.member-login-overlay').css('display','none');
     });
   });
-  
+
   $('#footer-include').load('/beyond/include/footer.html');
 
   /* Scroll Header fixd  */
