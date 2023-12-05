@@ -8,7 +8,29 @@ $(function(){
     $('section').click(function(){
       $('.mega-navi').stop().slideUp();
     });
+
+    /* toggle-pw */
+    $('.toggle-pw').click(function(){
+      // toggle icon shape
+      $(this).toggleClass('bi-eye');
+      // toggle input type
+      var inputType = $(this).parent().children('input').attr('type');
+      if(inputType == 'password') {
+        $(this).parent().children('input').attr('type', 'text');
+      } else {
+        $(this).parent().children('input').attr('type', 'password');
+      }
+    });
+
+    /* header login modal : open, hidden*/
+    $('.btn-login,').click(function(){
+      $('.member-login-overlay').fadeIn();
+    });
+    $('.btn-modal-close').click(function(){
+      $('.member-login-overlay').css('display','none');
+    });
   });
+  
   $('#footer-include').load('/beyond/include/footer.html');
 
   /* Scroll Header fixd  */
@@ -87,17 +109,6 @@ $(function(){
     // attr과 prop
   });
 
-  /* toggle-pw */
-  $('.toggle-pw').click(function(){
-    // toggle icon shape
-    $(this).toggleClass('bi-eye');
-    // toggle input type
-    var inputType = $(this).parent().children('input').attr('type');
-    if(inputType == 'password') {
-      $(this).parent().children('input').attr('type', 'text');
-    } else {
-      $(this).parent().children('input').attr('type', 'password');
-    }
-  });
+
 
 });
