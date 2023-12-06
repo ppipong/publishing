@@ -897,7 +897,6 @@ footer {
   .take-course-inner {
     display: flex;
     gap: 30px;
-    
     > div {
       min-height: 600px;
       padding: 30px;
@@ -1338,41 +1337,62 @@ footer {
   }
 }
 /* ############ class-detail Main ############ */
-.class-detail {
-  .class-detail-image {
-    display: block;
-    position: relative;
-    .class-detail-image-inner {
-      .heading {
-        h1 {}
-        p {}
+.class-detail-image {
+  padding: 0 !important;
+  background: url('/beyond/images/ct-class-detail-main-01.png') no-repeat center center;
+  background-size: cover;
+  .class-detail-image-inner {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .heading {
+      font-family: $secondary-kr;
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
       }
-      .cover-image {
-        
-        img {
-          width: 100%;
-          background-size: cover;
-        }
+      p {
+        font-size: 20px;
       }
     }
+    .cover-image {
+      img { height: 500px;}
+    }
   }
-  .class-detail-full {
-    .class-detail-full-inner {
-      .class-detail-full-content {
-        .class-detail-info {
-          .class-detail-navigation {
-            a {}
-          }
-          .class-introduce {}
-          .class-curriculum {}
-          .class-review {}
-          .class-faq {}
-          .class-mentor {}
+}
+.class-detail-full {
+  background-color: $light-gray;
+  .class-detail-full-inner {
+    .class-detail-full-content {
+      display: flex;
+      gap: 30px;
+      > div {
+        height: 600px;
+        padding: 30px;
+        background-color: $white;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba($color: $dim-black, $alpha: .2);
+      }
+      .class-detail-info {
+        flex: 1;
+        height: 2000px;
+        .class-detail-navigation {
+          a {}
         }
-        .class-detail-sidebar {
-          .class-required-info {}
-          .class-detail-banner {}
-        }
+        .class-introduce {}
+        .class-curriculum {}
+        .class-review {}
+        .class-faq {}
+        .class-mentor {}
+      }
+      .class-detail-sidebar {
+        flex-basis: 330px;
+        position: sticky;
+        top: 140px; 
+        // 해당 top 140에 도달하면 스티키 적용됨
+        .class-required-info {}
+        .class-detail-banner {}
       }
     }
   }
