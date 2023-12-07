@@ -1424,10 +1424,11 @@ footer {
               .trainee {}
               .class-price {
                 margin: 15px 0 5px;
-                flex : 1;
                 display: flex;
                 justify-content: space-between;
-                .sale {}
+                .sale {
+                  flex : 1;
+                }
                 .price-current { margin-right: 5px;}
                 .price-prev {}
               }
@@ -1445,6 +1446,10 @@ footer {
               }
             }
             &.group-main-action {
+              border-top: 1px solid $silver-gray;
+              border-bottom: 1px solid $silver-gray;
+              margin: 20px 0;
+              padding : 10px 0;
               .btn-primary {
                 display: block;
                 width: 100%;
@@ -1458,7 +1463,15 @@ footer {
                 &.btn-cart { background-color: $forestgreen; }
               }
             }
-            &.group-sub-action {}
+            &.group-sub-action {
+              .bi {}
+              button {
+                background-color: $silver-gray;
+                color: $dim-black;
+                padding: 10px 0;
+                
+              }
+            }
             &.group-mentor-summary {}
             &.group-inquire {}
           }
