@@ -1368,7 +1368,7 @@ footer {
       display: flex;
       gap: 30px;
       > div {
-        height: 600px;
+        height: 710px;
         padding: 30px;
         background-color: $white;
         border-radius: 10px;
@@ -1464,16 +1464,84 @@ footer {
               }
             }
             &.group-sub-action {
-              .bi {}
+              display: flex;
+              gap: 10px;
+              margin-bottom: 20px;
+              .bi {
+                font-family: $bs-font;
+                margin-right: 5px;
+                color: $dark-gray;
+              }
               button {
-                background-color: $silver-gray;
+                flex: 1;
+                background-color: $light-gray;
                 color: $dim-black;
                 padding: 10px 0;
-                
+                border-radius: 3px;
+                font-size: 13px;
+                border: none;
               }
             }
-            &.group-mentor-summary {}
-            &.group-inquire {}
+            &.group-mentor-summary {
+              .mentor-class-summary {
+                display: flex;
+                .mentor-avatar {
+                  img {
+                    width: 40px;
+                    border-radius: 50%;
+                  }
+                }
+                .class-summary-list {
+                  margin: 0;
+                  padding-left: 10px;
+                  font-size: 14px;
+                  line-height: 1.3em;
+                  list-style: none;
+                  li:before {
+                    content : '·';
+                    font-size: 20px;
+                    margin-right: 5px;
+                    transform: translateY(3px);
+                    display: inline-block;
+                  }
+                  // ::marker { font-size: 0.5em; }
+                }
+              }
+            }
+            &.group-inquire {
+              display: flex;
+              justify-content: space-between;
+              border: 1px solid $silver-black;
+              font-size: 14px;
+              font-weight: 500;
+              border-radius: 5px;
+              padding: 12px 10px;
+              margin: 10px 0;
+              .btn-inquire {
+                .bi {
+                  font-family: $bs-font;
+                }
+              }
+            }
+          }
+        }
+        .btn-mentor-follow {
+          display: block;
+          border: 1px solid $tomato;
+          text-align: center;
+          font-weight: 400;
+          padding: 10px;
+          border-radius: 5px;
+          color: $tomato;
+          font-size: 16px;
+          margin-top: 20px;
+          &::before {
+            content: '\F64D';
+            font-family: $bs-font;
+            color: $tomato;
+            margin-right: 5px;
+            transform: translateY(2px);
+            display: inline-block;
           }
         }
         .class-detail-banner {}

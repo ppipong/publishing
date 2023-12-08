@@ -35,7 +35,7 @@ $(function(){
 
   /* Scroll Header fixd  */
   $(window).scroll(function(){
-    if($(this).scrollTop() > 200) {
+    if($(this).scrollTop() > 150) {
       $('header').addClass('active');
     } else {
       $('header').removeClass();
