@@ -1509,17 +1509,28 @@ footer {
               }
             }
             &.group-inquire {
-              display: flex;
-              justify-content: space-between;
-              border: 1px solid $silver-black;
-              font-size: 14px;
-              font-weight: 500;
-              border-radius: 5px;
-              padding: 12px 10px;
-              margin: 10px 0;
+              border-top: 1px solid $silver-gray;
+              margin-top: 20px;
+              padding-top: 20px;
               .btn-inquire {
-                .bi {
+                text-align: center;
+                display: block;
+                letter-spacing: -.01em;
+                font-size: 14px;
+                font-weight: 500;
+                &::before,
+                &::after {
                   font-family: $bs-font;
+                  display: inline-block;
+                  transform: translateY(2px);
+                }
+                &::before {
+                  content : '\F24A';
+                  margin-right: 5px;
+                }
+                &::after {
+                  content : '\F285';
+                  margin-left: 5px;
                 }
               }
             }
@@ -1549,3 +1560,4 @@ footer {
     }
   }
 }
+/* Class share modal */
