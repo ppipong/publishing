@@ -1326,7 +1326,7 @@ footer {
       font-size: 12px;
       text-align: center;
     }
-    .btn-modal-close {
+    @at-root .btn-modal-close {
       position: absolute;
       right: 20px;
       top: 10px;
@@ -1561,3 +1561,59 @@ footer {
   }
 }
 /* Class share modal */
+.class-share-overlay {
+  position: fixed;
+  background-color: rgba($color: $dark-black, $alpha: 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  // display: none;
+  .class-share {
+    width: 400px;
+    background-color: $white;
+    padding: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h2 {
+      text-align: center;
+      font-family: $secondary-kr;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .share-choice-items {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      margin: auto;
+      gap: 20px;
+      .share-choice-item {
+        flex : 1;
+        text-align: center;
+        cursor: pointer;
+        .bi {
+          display: block;
+          font-size: 1.5em;
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          line-height: 200%;
+          border-radius: 5px;
+          border: 1px solid tomato;
+        }
+        span {
+          display: block;
+          font-size: 12px;
+        }
+        &.share-link {
+          .copied-link {}
+        }
+      }
+    }
+    // .btn-modal-close {}
+  }
+}
