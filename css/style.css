@@ -1446,6 +1446,7 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   justify-content: center;
   width: 80%;
   margin: auto;
+  margin-top: 15px;
   gap: 20px;
 }
 .class-share-overlay .class-share .share-choice-items .share-choice-item {
@@ -1459,11 +1460,25 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   width: 50px;
   height: 50px;
   text-align: center;
-  line-height: 200%;
+  line-height: 210%;
   border-radius: 5px;
-  border: 1px solid tomato;
+  color: #FFFFFF;
 }
 .class-share-overlay .class-share .share-choice-items .share-choice-item span {
   display: block;
+  font-weight: 400;
   font-size: 12px;
+}
+.class-share-overlay .class-share .share-choice-items .share-choice-item:nth-child(1) .bi {
+  background-color: #395599;
+}
+.class-share-overlay .class-share .share-choice-items .share-choice-item:nth-child(2) .bi {
+  background-color: #1C9CEB;
+}
+.class-share-overlay .class-share .share-choice-items .share-choice-item:nth-child(3) .bi {
+  background-color: #F2DD07;
+}
+.class-share-overlay .class-share .share-choice-items .share-choice-item:nth-child(4) .bi {
+  color: #333333;
+  background-color: #DDDDDD;
 }

@@ -1590,6 +1590,7 @@ footer {
       justify-content: center;
       width: 80%;
       margin: auto;
+      margin-top: 15px;
       gap: 20px;
       .share-choice-item {
         flex : 1;
@@ -1601,16 +1602,30 @@ footer {
           width: 50px;
           height: 50px;
           text-align: center;
-          line-height: 200%;
+          line-height: 210%;
           border-radius: 5px;
-          border: 1px solid tomato;
+          color: $white;
         }
         span {
           display: block;
+          font-weight: 400;
           font-size: 12px;
         }
         &.share-link {
           .copied-link {}
+        }
+        &:nth-child(1) .bi {
+          background-color: #395599;
+        }
+        &:nth-child(2) .bi {
+          background-color: #1C9CEB;
+        }
+        &:nth-child(3) .bi {
+          background-color: #F2DD07;
+        }
+        &:nth-child(4) .bi {
+          color: $dark-black;
+          background-color: $dim-gray;
         }
       }
     }
