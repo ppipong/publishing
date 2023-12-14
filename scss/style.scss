@@ -10,7 +10,9 @@ body {
   margin: 0;
   font-size: 15px;
 }
-
+body.active {
+  overflow: hidden;
+}
 /* ############ Common CSS  ############ */
 section:not(.front-slider) {
   // border: 1px solid #000;
@@ -1376,7 +1378,7 @@ footer {
       }
       .class-detail-info {
         flex: 1;
-        height: 2000px;
+        height: auto;
         .class-detail-navigation {
           a {}
         }
@@ -1569,7 +1571,7 @@ footer {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  // display: none;
+  display: none;
   .class-share {
     width: 400px;
     background-color: $white;
@@ -1584,13 +1586,13 @@ footer {
       font-family: $secondary-kr;
       font-size: 20px;
       font-weight: 600;
+      margin-bottom: 30px;
     }
     .share-choice-items {
       display: flex;
       justify-content: center;
       width: 80%;
       margin: auto;
-      margin-top: 15px;
       gap: 20px;
       .share-choice-item {
         flex : 1;
@@ -1608,11 +1610,35 @@ footer {
         }
         span {
           display: block;
-          font-weight: 400;
           font-size: 12px;
+          font-weight: 400;
         }
         &.share-link {
-          .copied-link {}
+          position: relative;
+          .copied-link {
+            font-size: 10px;
+            background: $black;
+            color: $white;
+            white-space: nowrap;
+            padding: 3px 5px;
+            border-radius: 3px;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+            &::after {
+              content : '';
+              width: 8px;
+              height: 8px;
+              background-color: $black;
+              display: inline-block;
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              transform: translate(-50%, -50%) rotate(45deg);
+            }
+          }
         }
         &:nth-child(1) .bi {
           background-color: #395599;

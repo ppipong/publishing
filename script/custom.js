@@ -25,9 +25,12 @@ $(function(){
     /* header login modal : open, hidden*/
     $('.btn-login').click(function(){
       $('.member-login-overlay').fadeIn();
+      $('body').addClass('active');
     });
     $('.btn-modal-close').click(function(){
       $('.member-login-overlay').css('display','none');
+      $('.class-share-overlay').css('display','none');
+      $('body').removeClass('active');
     });
   });
 
@@ -109,6 +112,17 @@ $(function(){
     // attr과 prop
   });
 
-
-
+  /* calss detail : share-modal, copied-link */
+  $('.btn-sidebar-badge.share').click(function(){
+    $('.class-share-overlay').fadeIn();
+    $('body').addClass('active');
+  });
+  $('.share-link').click(function(){
+    $('.copied-link').fadeIn(1000, function() {
+      setTimeout(() => {
+        $(this).fadeOut(1000)
+      }, 2000);
+    });
+  });
+  
 });
