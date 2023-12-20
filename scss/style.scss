@@ -1382,7 +1382,39 @@ footer {
         .class-detail-navigation {
           a {}
         }
-        .class-introduce {}
+        .class-detail-header {
+          border-left : 5px solid tomato;
+          padding-left : 10px;
+          h2 {
+            font-size: 20px;
+          }
+          span {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+        article {
+          padding: 20px 0;
+          border: 1px solid tomato;
+        }
+        .class-introduce {
+          .class-detail-wrap {
+            padding-top: 20px;
+            .sub-wrap {
+              text-align: center;
+              border: 1px solid silver;
+              border-radius: 5px;
+              h2 {
+                font-size: 18px;
+                color: $royalblue;
+              }
+              .class-introduce-feature {
+                list-style: none;
+                font-size: 14px;
+              }
+            }
+          }
+        }
         .class-curriculum {}
         .class-review {}
         .class-faq {}
