@@ -1,6 +1,6 @@
 $(function(){
   /* include Files */
-  $('#header-include').load('./include/header.html', function(){
+  $('#header-include').load('../include/header.html', function(){
     /* header navi magamenu */
     $('.trigger').click(function(){
       $('.mega-navi').stop().slideToggle();
@@ -34,7 +34,7 @@ $(function(){
     });
   });
 
-  $('#footer-include').load('./include/footer.html');
+  $('#footer-include').load('../include/footer.html');
 
   /* Scroll Header fixd  */
   $(window).scroll(function(){

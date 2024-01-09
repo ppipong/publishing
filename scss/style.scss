@@ -1113,7 +1113,7 @@ footer {
                 height: 20px;
                 margin-right: 3px;
                 transform: translateY(3px);
-                background: url('/beyond/images/icon-custom-radio.png') no-repeat;
+                background: url('../images/icon-custom-radio.png') no-repeat;
                 background-position: left;
               }
               &:checked + em {
@@ -1282,25 +1282,25 @@ footer {
         color: $white;
         font-weight: 400;
         border-radius: 3px;
-        background-image: url('/beyond/images/icon-kakao.svg');
+        background-image: url('../images/icon-kakao.svg');
         background-repeat: no-repeat;
         background-position: center left 20px;
         background-size: 20px;
         &.kakao {
           background-color: $orange;
-          background-image: url('/beyond/images/icon-kakao.svg');
+          background-image: url('../images/icon-kakao.svg');
         }
         &.facebook {
           background-color: $royalblue;
-          background-image: url('/beyond/images/icon-facebook.svg');
+          background-image: url('../images/icon-facebook.svg');
         }
         &.apple {
           background-color: $black;
-          background-image: url('/beyond/images/icon-apple.svg');
+          background-image: url('../images/icon-apple.svg');
         }
         &.email {
           color: $dark-black;
-          background-image: url('/beyond/images/icon-email.svg');
+          background-image: url('../images/icon-email.svg');
           border: 1px solid $dim-gray;
         }
       }
@@ -1341,7 +1341,7 @@ footer {
 /* ############ class-detail Main ############ */
 .class-detail-image {
   padding: 0 !important;
-  background: url('/beyond/images/ct-class-detail-main-01.png') no-repeat center center;
+  background: url('../images/ct-class-detail-main-01.png') no-repeat center center;
   background-size: cover;
   .class-detail-image-inner {
     height: 600px;

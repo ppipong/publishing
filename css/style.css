@@ -1026,7 +1026,7 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   height: 20px;
   margin-right: 3px;
   transform: translateY(3px);
-  background: url("/beyond/images/icon-custom-radio.png") no-repeat;
+  background: url("../images/icon-custom-radio.png") no-repeat;
   background-position: left;
 }
 .take-course .take-course-inner .payment .payment-method-wrap > div label input[type=radio]:checked + em {
@@ -1190,26 +1190,26 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   color: #FFFFFF;
   font-weight: 400;
   border-radius: 3px;
-  background-image: url("/beyond/images/icon-kakao.svg");
+  background-image: url("../images/icon-kakao.svg");
   background-repeat: no-repeat;
   background-position: center left 20px;
   background-size: 20px;
 }
 .member-login-overlay .member-login .easy-login .btn-easy-login.kakao {
   background-color: #FFD912;
-  background-image: url("/beyond/images/icon-kakao.svg");
+  background-image: url("../images/icon-kakao.svg");
 }
 .member-login-overlay .member-login .easy-login .btn-easy-login.facebook {
   background-color: #006BE5;
-  background-image: url("/beyond/images/icon-facebook.svg");
+  background-image: url("../images/icon-facebook.svg");
 }
 .member-login-overlay .member-login .easy-login .btn-easy-login.apple {
   background-color: #000000;
-  background-image: url("/beyond/images/icon-apple.svg");
+  background-image: url("../images/icon-apple.svg");
 }
 .member-login-overlay .member-login .easy-login .btn-easy-login.email {
   color: #333333;
-  background-image: url("/beyond/images/icon-email.svg");
+  background-image: url("../images/icon-email.svg");
   border: 1px solid #DDDDDD;
 }
 .member-login-overlay .member-login .easy-login .or {
@@ -1249,7 +1249,7 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
 /* ############ class-detail Main ############ */
 .class-detail-image {
   padding: 0 !important;
-  background: url("/beyond/images/ct-class-detail-main-01.png") no-repeat center center;
+  background: url("../images/ct-class-detail-main-01.png") no-repeat center center;
   background-size: cover;
 }
 .class-detail-image .class-detail-image-inner {
