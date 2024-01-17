@@ -1370,7 +1370,6 @@ footer {
       display: flex;
       gap: 30px;
       > div {
-        height: 710px;
         padding: 30px;
         background-color: $white;
         border-radius: 10px;
@@ -1380,16 +1379,49 @@ footer {
         flex: 1;
         height: auto;
         .class-detail-navigation {
-          a {}
+          border-bottom: 1px solid $silver-gray;
+          height: 50px;
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          background-color: $white;
+          padding: 30px 0;
+          a {
+            position: relative;
+            &.active {
+              font-weight: 500;
+              &::after {
+                content: '';
+                width: 100%;
+                height: 3px;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                background-color: $black;
+              }
+            }
+          }
         }
+        /* class Detail header */
         .class-detail-header {
-          border-left : 5px solid tomato;
-          padding-left : 10px;
+          position: relative;
+          padding-left: 10px;
+          &::before {
+            content: '';
+            width: 4px;
+            height: 45px;
+            background-color: $crimson;
+            position: absolute;
+            left: 0;
+            top: 6px;
+          }
           h2 {
             font-size: 20px;
+            font-weight: 500;
           }
           span {
             font-size: 14px;
+            color: $dim-black;
             font-weight: 400;
           }
         }
@@ -1397,10 +1429,13 @@ footer {
           padding: 20px 0;
           border: 1px solid tomato;
         }
+        /* article : class-introduce */
         .class-introduce {
           .class-detail-wrap {
             padding-top: 20px;
             .sub-wrap {
+              width: 100%;
+              display: block;
               text-align: center;
               border: 1px solid silver;
               border-radius: 5px;
@@ -1412,15 +1447,132 @@ footer {
                 list-style: none;
                 font-size: 14px;
               }
+              img {}
             }
           }
         }
-        .class-curriculum {}
-        .class-review {}
+        /* article : class-curriculum */
+        .class-curriculum {
+          .class-detail-wrap {
+            padding-top: 20px;
+            .curriculum-basic-info {
+              &.header {
+                margin-top: 10px;
+              }
+              &.header,&.footer {
+                // display: block;
+                background-color: $silver-gray;
+                padding: 10px 15px;
+                border-radius: 5px;
+                font-weight: normal;
+                display: flex;
+                justify-content: space-between;
+              }
+              &.footer {
+                text-align: center;
+                background-color: $light-gray;
+                color: $light-black;
+                font-size: 14px;
+                display: block;
+                margin-bottom: 5px;
+              }
+            }
+            .curriculum-accordion {
+              .accordion-item-wrap {
+                .chapter-title {
+                  cursor: pointer;
+                  padding: 10px 5px;
+                  display: flex;
+                  justify-content: space-between;
+                  border-bottom: 1px solid $silver-gray;
+                  &.active .chapter-subject::before {
+                    content: '\F64D';
+                  }
+                  .chapter-subject {
+                    color: $turquoise;
+                    font-weight: 500;
+                    &::before {
+                      // content: '\F64D';
+                      content: '\F63B';
+                      display: inline-block;
+                      font-family: $bs-font;
+                      font-weight: bold;
+                      padding: 4px;
+                      transform: translateY(2px);
+                    }
+                  }
+                  // .chapter-hour {}
+                }
+                .chapter-content {
+                  display: none;
+                  .chapter-content-class {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 8px 5px;
+                    .class-subjuct {
+                      cursor: pointer;
+                      .bi {
+                        margin-right: 5px;
+                      }
+                    }
+                    .class-hour {
+                      .curriculum-badge.free {
+                        color: $forestgreen;
+                        background-color: $silver-gray;
+                        font-size: 11px;
+                        border-radius: 3px;
+                        padding: 2px;
+                        margin-right: 5px;
+                        font-weight: normal;
+                      }
+                      // .class-hour-detail {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        /* article : class-review */
+        .class-review {
+          .class-detail-wrap {
+            margin-top: 20px;
+            > div {}
+            .review-rating-group {
+              display: flex;
+              gap: 20px;
+              .review-stars-rating {
+                display: block;
+                border: 1px solid tomato;
+                .stars-rating-count {
+                  .review-stars {
+                    .bi {}
+                  }
+                }
+              }
+              .review-focus-group {
+                .review-focus {
+                  span {
+                    .bi {}
+                  }
+                  div {
+                    b {}
+                  }
+                }
+              }
+            }
+            .review-user-comment-group {
+            }
+            .btn-review-more {}
+          }
+        }
+        /* article : class-faq */
         .class-faq {}
+        /* article : class-mentor */
         .class-mentor {}
       }
       .class-detail-sidebar {
+        height: 720px;
         flex-basis: 330px;
         position: sticky;
         top: 150px; 

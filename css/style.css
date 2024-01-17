@@ -1280,7 +1280,6 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   gap: 30px;
 }
 .class-detail-full .class-detail-full-inner .class-detail-full-content > div {
-  height: 710px;
   padding: 30px;
   background-color: #FFFFFF;
   border-radius: 10px;
@@ -1289,16 +1288,57 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
 .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info {
   flex: 1;
   height: auto;
+  /* class Detail header */
+  /* article : class-introduce */
+  /* article : class-curriculum */
+  /* article : class-review */
+  /* article : class-faq */
+  /* article : class-mentor */
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-detail-navigation {
+  border-bottom: 1px solid #EEEEEE;
+  height: 50px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 30px 0;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-detail-navigation a {
+  position: relative;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-detail-navigation a.active {
+  font-weight: 500;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-detail-navigation a.active::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #000000;
 }
 .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-detail-header {
-  border-left: 5px solid tomato;
+  position: relative;
   padding-left: 10px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-detail-header::before {
+  content: "";
+  width: 4px;
+  height: 45px;
+  background-color: #ED2040;
+  position: absolute;
+  left: 0;
+  top: 6px;
 }
 .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-detail-header h2 {
   font-size: 20px;
+  font-weight: 500;
 }
 .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-detail-header span {
   font-size: 14px;
+  color: #555555;
   font-weight: 400;
 }
 .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info article {
@@ -1309,6 +1349,8 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   padding-top: 20px;
 }
 .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-introduce .class-detail-wrap .sub-wrap {
+  width: 100%;
+  display: block;
   text-align: center;
   border: 1px solid silver;
   border-radius: 5px;
@@ -1321,7 +1363,86 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   list-style: none;
   font-size: 14px;
 }
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap {
+  padding-top: 20px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-basic-info.header {
+  margin-top: 10px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-basic-info.header, .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-basic-info.footer {
+  background-color: #EEEEEE;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-basic-info.footer {
+  text-align: center;
+  background-color: #F5F5F5;
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-accordion .accordion-item-wrap .chapter-title {
+  cursor: pointer;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #EEEEEE;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-accordion .accordion-item-wrap .chapter-title.active .chapter-subject::before {
+  content: "\f64d";
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-accordion .accordion-item-wrap .chapter-title .chapter-subject {
+  color: #00D2D3;
+  font-weight: 500;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-accordion .accordion-item-wrap .chapter-title .chapter-subject::before {
+  content: "\f63b";
+  display: inline-block;
+  font-family: bootstrap-icons;
+  font-weight: bold;
+  padding: 4px;
+  transform: translateY(2px);
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-accordion .accordion-item-wrap .chapter-content {
+  display: none;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-accordion .accordion-item-wrap .chapter-content .chapter-content-class {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 5px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-accordion .accordion-item-wrap .chapter-content .chapter-content-class .class-subjuct {
+  cursor: pointer;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-accordion .accordion-item-wrap .chapter-content .chapter-content-class .class-subjuct .bi {
+  margin-right: 5px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-accordion .accordion-item-wrap .chapter-content .chapter-content-class .class-hour .curriculum-badge.free {
+  color: #2ECC71;
+  background-color: #EEEEEE;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 2px;
+  margin-right: 5px;
+  font-weight: normal;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap {
+  margin-top: 20px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group {
+  display: flex;
+  gap: 20px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating {
+  display: block;
+  border: 1px solid tomato;
+}
 .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-sidebar {
+  height: 720px;
   flex-basis: 330px;
   position: sticky;
   top: 150px;

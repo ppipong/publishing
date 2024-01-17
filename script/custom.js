@@ -58,6 +58,17 @@ $(function(){
       );
   });
 
+  /* Class Detail Navigation */
+  $('.class-detail-navigation a').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+
+  /* Class curriculum-accordion */
+  $('.chapter-title').click(function(){
+    $(this).next().toggle();
+    $(this).toggleClass('active');
+  });
+
   /* Front slider */
   $('.front-slider-items').slick({
     infinite: true, // 마지막 슬라이드 다음에 처음으로 돌아가기
