@@ -1414,6 +1414,7 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
   display: flex;
   justify-content: space-between;
   padding: 8px 5px;
+  border-bottom: 1px solid #EEEEEE;
 }
 .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-curriculum .class-detail-wrap .curriculum-accordion .accordion-item-wrap .chapter-content .chapter-content-class .class-subjuct {
   cursor: pointer;
@@ -1436,10 +1437,134 @@ footer .footer-inner .copyright-wrap .sns a .bi:hover {
 .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group {
   display: flex;
   gap: 20px;
+  margin-bottom: 20px;
 }
 .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating {
+  border: 1px solid #EEEEEE;
+  border-radius: 10px;
+  padding: 15px;
+  flex: 3;
+  height: 230px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating .stars-rating-count {
+  text-align: center;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating .stars-rating-count .review-stars .bi {
+  color: #FFD912;
+  font-size: 30px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating .stars-rating-count .review-rating {
+  font-weight: 700;
+  font-size: 30px;
+  padding: 0 8px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating .stars-rating-count .review-count {
+  font-weight: 500;
+  color: #999999;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating .review-diagram-group {
+  margin-top: 20px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating .review-diagram-group .review-diagram {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 2px 0;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating .review-diagram-group .review-diagram b {
+  font-size: 16px;
+  width: 30px;
+  font-weight: 500;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating .review-diagram-group .review-diagram:nth-child(3) .review-diagram-bar .review-diagram-bar-progress, .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating .review-diagram-group .review-diagram:nth-child(4) .review-diagram-bar .review-diagram-bar-progress, .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating .review-diagram-group .review-diagram:nth-child(5) .review-diagram-bar .review-diagram-bar-progress {
+  background-color: #BDBDBD;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating .review-diagram-group .review-diagram .review-diagram-bar {
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  position: relative;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-stars-rating .review-diagram-group .review-diagram .review-diagram-bar .review-diagram-bar-progress {
+  position: absolute;
+  background: #FFD912;
+  height: inherit;
+  border-radius: inherit;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-focus-group {
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+  justify-content: center;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-focus-group .review-focus {
+  display: flex;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-focus-group .review-focus span .bi {
+  font-size: 32px;
+  margin-right: 15px;
+  line-height: 140%;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-focus-group .review-focus div {
+  display: inline-block;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group .review-focus-group .review-focus div b {
   display: block;
-  border: 1px solid tomato;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-user-comment-group .review-user-comment {
+  display: flex;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 14px 0;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-user-comment-group .review-user-comment .user-avatar {
+  display: block;
+  flex-shrink: 0;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+  overflow: hidden;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-user-comment-group .review-user-comment .user-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-user-comment-group .review-user-comment .user-comment .user-name-date .user-name {
+  font-weight: 500;
+  margin-right: 5px;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-user-comment-group .review-user-comment .user-comment .user-name-date .write-date {
+  color: #777777;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-user-comment-group .review-user-comment .user-comment .review-stars .bi {
+  color: #FFD912;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-user-comment-group .review-user-comment .user-comment p {
+  margin: 5px 0;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-user-comment-group .review-user-comment:last-child {
+  border-bottom: none;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .btn-review-more {
+  display: block;
+  font-weight: 500;
+  color: #FD5631;
+  font-size: 16px;
+  border: 1px solid #FD5631;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+.class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .btn-review-more:hover {
+  transition: 0.3s;
+  background-color: #FD5631;
+  color: #FFFFFF;
 }
 .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-sidebar {
   height: 720px;
