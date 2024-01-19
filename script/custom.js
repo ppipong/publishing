@@ -69,6 +69,11 @@ $(function(){
     $(this).toggleClass('active');
   });
 
+  /* class faq-accordion */
+  $('.faq-accordion').click(function(){
+    $(this).children().next().toggle();
+  });
+
   /* Front slider */
   $('.front-slider-items').slick({
     infinite: true, // 마지막 슬라이드 다음에 처음으로 돌아가기

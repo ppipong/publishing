@@ -1426,13 +1426,15 @@ footer {
           }
         }
         article {
-          padding: 20px 0;
           border: 1px solid tomato;
+          padding: 20px 0;
+          .class-detail-wrap {
+            margin-top: 30px;
+          }
         }
         /* article : class-introduce */
         .class-introduce {
           .class-detail-wrap {
-            padding-top: 20px;
             .sub-wrap {
               width: 100%;
               display: block;
@@ -1454,7 +1456,6 @@ footer {
         /* article : class-curriculum */
         .class-curriculum {
           .class-detail-wrap {
-            padding-top: 20px;
             .curriculum-basic-info {
               &.header {
                 margin-top: 10px;
@@ -1537,10 +1538,6 @@ footer {
         /* article : class-review */
         .class-review {
           .class-detail-wrap {
-            margin-top: 20px;
-            > div {
-              // border: 1px solid tomato;
-            }
             .review-rating-group {
               display: flex;
               gap: 20px;
@@ -1644,7 +1641,6 @@ footer {
                   width: 50px;
                   height: 50px;
                   border-radius: 50%;
-                  // transform: translateY(50%);
                   background-color: $light-gray;
                   overflow: hidden;
                   img {
@@ -1680,26 +1676,109 @@ footer {
             .btn-review-more {
               display: block;
               font-weight: 500;
-              color: $orangered;
+              color: $crimson;
               font-size: 16px;
-              border: 1px solid $orangered;
+              border: 1px solid $crimson;
               border-radius: 6px;
               margin-top: 20px;
               padding: 10px 0;
               text-align: center;
               &:hover {
                 transition: .3s;
-                background-color: $orangered;
+                background-color: $crimson;
                 color: $white;
               }
             }
           }
         }
         /* article : class-faq */
-        .class-faq {}
+        .class-faq {
+          .class-detail-wrap {
+            .faq-accordion {
+              .faq-title {
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 10px 0;
+              }
+              .faq-content {
+                display: none;
+                padding-bottom: 15px;
+                border-bottom: 1px solid $silver-gray;
+              }
+            }
+          }
+        }
         /* article : class-mentor */
-        .class-mentor {}
+        .class-mentor {
+          .class-detail-wrap {
+            display: flex;
+            .mentor-profile-summary {
+              border: 1px solid $silver-gray;
+              border-radius: 10px;
+              flex :2;
+              text-align: center;
+              .mentor-avatar {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: $silver-gray;
+                margin: 20px 0;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+              .mentor-slogan {
+                padding-top: 10px;
+                border-top: 1px solid $silver-gray;
+                margin: 0 20px;
+              }
+              .mentor-class-button {
+                margin: 100px 0 30px 0;
+                .btn-mentor-profile {
+                  font-weight: 500;
+                  background: $white;
+                  border: 1px solid $silver-gray;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  padding: 5px 10px;
+                  em {
+                    color: $orangered;
+                    font-style: normal;
+                  }
+                }
+              }
+            }
+            .mentor-profile-career {
+              flex : 3;
+              margin-left: 20px;
+              font-size: 14px;
+              color: $silver-gray;
+              h4 {
+                font-weight: 600;
+              }
+              .mentor-profile-header {}
+              .mentor-profile-history {
+                h4 {
+                  padding-top: 20px;
+                }
+                ul {
+                  margin: 0;
+                  padding : 0 0 0 30px;
+                  li {
+                    line-height: 1.8;
+                  }
+                }
+                }
+              }
+            }
+          }
+        }
       }
+      /* detail-sidebar */
       .class-detail-sidebar {
         height: 720px;
         flex-basis: 330px;
@@ -1874,7 +1953,6 @@ footer {
       }
     }
   }
-}
 /* Class share modal */
 .class-share-overlay {
   position: fixed;
