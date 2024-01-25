@@ -59,8 +59,14 @@ $(function(){
   });
 
   /* Class Detail Navigation */
-  $('.class-detail-navigation a').click(function(){
+  $('.class-detail-navigation a').click(function(e){
     $(this).addClass('active').siblings().removeClass('active');
+    // smooth scrolling
+    let linkLocation = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop : $(linkLocation).offset().top
+    }, 500);
+    e.preventDefault();
   });
 
   /* Class curriculum-accordion */
@@ -70,8 +76,9 @@ $(function(){
   });
 
   /* class faq-accordion */
-  $('.faq-accordion').click(function(){
-    $(this).children().next().toggle();
+  $('.faq-title').click(function(){
+    // 클릭한 것 펼치고 나머지는 접기
+    $(this).next().slideToggle();
   });
 
   /* Front slider */

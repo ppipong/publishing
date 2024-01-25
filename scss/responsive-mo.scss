@@ -1,0 +1,26 @@
+/* import local scss Files */
+@import "reset.css", "variables", "fonts.css";
+
+/* Responsive for Mobile */
+@media (max-width : 767px) {
+
+    // 임시 css 
+    header,
+    footer,
+    .front-slider,
+    .category-shortcut,
+    .focus-class,
+    .best-class,
+    .early-bird,
+    .early-bird-countdwon,
+    .blog,
+    .slogan,
+    .tip-tech{
+        display: none;
+    }
+    
+    /* ############ Common CSS  ############ */
+    /* ############ header ############ */
+    /* ############ section : front ############ */
+    /* ############ section : front-slider ############ */
+}

@@ -5,6 +5,8 @@
   font-family: $primary-kr;
   color: $dark-black;
 }
+// url 주소에 id 값이 찍혀서 나오기 때문에 js처리로 해주는 것이 더 좋음
+// html {scroll-behavior: smooth;}
 body {
   font-weight: 300;
   margin: 0;
@@ -1386,6 +1388,9 @@ footer {
           align-items: center;
           background-color: $white;
           padding: 30px 0;
+          position: sticky;
+          top: 120px;
+          z-index: 1;
           a {
             position: relative;
             &.active {
@@ -1426,7 +1431,7 @@ footer {
           }
         }
         article {
-          border: 1px solid tomato;
+          // border: 1px solid tomato;
           padding: 20px 0;
           .class-detail-wrap {
             margin-top: 30px;
@@ -1697,7 +1702,7 @@ footer {
             .faq-accordion {
               .faq-title {
                 cursor: pointer;
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: 500;
                 padding: 10px 0;
               }
@@ -1705,6 +1710,8 @@ footer {
                 display: none;
                 padding-bottom: 15px;
                 border-bottom: 1px solid $silver-gray;
+                font-size: 14px;
+                // &:last-child { border: none;}
               }
             }
           }
@@ -1713,18 +1720,23 @@ footer {
         .class-mentor {
           .class-detail-wrap {
             display: flex;
+            gap: 20px;
             .mentor-profile-summary {
               border: 1px solid $silver-gray;
               border-radius: 10px;
               flex :2;
+              gap: 50px;
               text-align: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
               .mentor-avatar {
                 display: inline-block;
                 width: 100px;
                 height: 100px;
                 border-radius: 50%;
                 background-color: $silver-gray;
-                margin: 20px 0;
+                margin: 30px auto 0 auto;
                 img {
                   width: 100%;
                   height: 100%;
@@ -1737,7 +1749,7 @@ footer {
                 margin: 0 20px;
               }
               .mentor-class-button {
-                margin: 100px 0 30px 0;
+                margin-bottom: 30px;
                 .btn-mentor-profile {
                   font-weight: 500;
                   background: $white;
@@ -1748,17 +1760,17 @@ footer {
                   em {
                     color: $orangered;
                     font-style: normal;
+                    margin-left: 3px;
                   }
                 }
               }
             }
             .mentor-profile-career {
               flex : 3;
-              margin-left: 20px;
               font-size: 14px;
               color: $silver-gray;
               h4 {
-                font-weight: 600;
+                font-size: 16px;
               }
               .mentor-profile-header {}
               .mentor-profile-history {
@@ -1768,9 +1780,7 @@ footer {
                 ul {
                   margin: 0;
                   padding : 0 0 0 30px;
-                  li {
-                    line-height: 1.8;
-                  }
+                  line-height: 1.8;
                 }
                 }
               }
