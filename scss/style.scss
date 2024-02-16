@@ -65,7 +65,8 @@ header {
         img {
         }
       }
-      .search {
+      @at-root .search,
+      .search-mo {
         width: 520px;
         position: relative;
         cursor: pointer;
@@ -204,6 +205,11 @@ header {
     width: 100%;
     background-color: $dark-black;
     display: none;
+    /* pc화면 - 모바일 노출 방지 */
+    .search-mo,
+    .btn-mega-navi-close {
+      display: none;
+    }
     .mega-navi-inner {
       margin: auto;
       padding: 20px 0;

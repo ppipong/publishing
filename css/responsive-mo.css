@@ -1,0 +1,117 @@
+/* import local scss Files */
+@import "reset.css";
+/* Setting Variables : Font Family */
+/* Setting Variables : Text Color */
+/* Setting Variables : Object Color */
+@import "fonts.css";
+/* Responsive for Mobile */
+@media (max-width: 767px) {
+  footer,
+  .front-slider,
+  .category-shortcut,
+  .focus-class,
+  .best-class,
+  .early-bird,
+  .early-bird-countdwon,
+  .blog,
+  .slogan,
+  .tip-tech {
+    display: none;
+  }
+  /* ############ Common CSS  ############ */
+  [class*=inner] {
+    width: 100%;
+  }
+  /* ############ header ############ */
+  header .header-inner {
+    padding: 15px 10px 0 10px;
+    /* mega-navi */
+  }
+  header .header-inner .logo {
+    display: inline-block;
+    line-height: 100%;
+  }
+  header .header-inner .search {
+    display: none;
+  }
+  header .header-inner .gnb {
+    font-size: 12px;
+    gap: 5px;
+    height: 40px;
+  }
+  header .header-inner .gnb .trigger {
+    font-size: 0;
+    transform: translate(2px, -3px);
+  }
+  header .header-inner .gnb .trigger::before {
+    background: url(../images/icon-category-search.png);
+    margin-right: 0;
+  }
+  header .header-inner .gnb .special-navi {
+    white-space: nowrap;
+    border: 1px solid tomato;
+    width: 360px;
+    overflow-y: hidden;
+  }
+  header .header-inner .gnb .special-navi a:first-child::after {
+    display: none;
+  }
+  header .mega-navi {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-top: 60px;
+  }
+  header .mega-navi .search-mo {
+    width: 280px;
+    margin: auto;
+  }
+  header .mega-navi .mega-navi-inner {
+    flex-direction: column;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item:last-child b {
+    border: none;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item b {
+    border-bottom: 1px solid #555555;
+    display: block;
+    padding: 5px 15px;
+    color: #777777;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item b::after {
+    content: "\f64d";
+    font-family: bootstrap-icons;
+    float: right;
+    color: #777777;
+    font-size: 18px;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item b.active {
+    color: #FFFFFF;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item b.active::after {
+    content: "\f63b";
+    color: #FFFFFF;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item b:last-child {
+    border: none;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap {
+    display: none;
+    padding: 10px 15px;
+  }
+  header .mega-navi .btn-mega-navi-close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: none;
+    font-size: 1em;
+    background-color: transparent;
+    color: #FFFFFF;
+  }
+  /* ############ section : front ############ */
+  /* ############ section : front-slider ############ */
+}

@@ -1,12 +1,22 @@
 $(function(){
   /* include Files */
   $('#header-include').load('../include/header.html', function(){
-    /* header navi magamenu */
+    /* header navi megamenu */
     $('.trigger').click(function(){
       $('.mega-navi').stop().slideToggle();
     });
     $('section').click(function(){
       $('.mega-navi').stop().slideUp();
+    });
+    /* header navi megamenu - MO */
+    $('.mega-navi-item b').click(function(){
+      $('.mega-navi-item-wrap').slideUp(200);
+      $(this).next().stop().slideDown(200);
+      $(this).addClass('active');
+      $(this).parent().siblings().children('b').removeClass('active');
+    });
+    $('.btn-mega-navi-close').click(function(){
+      $('.mega-navi').stop().slideToggle();
     });
 
     /* toggle-pw */

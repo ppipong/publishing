@@ -71,12 +71,14 @@ header .header-inner .logo-search {
   display: flex;
   gap: 20px;
 }
-header .header-inner .logo-search .search {
+.search,
+.search-mo {
   width: 520px;
   position: relative;
   cursor: pointer;
 }
-header .header-inner .logo-search .search input[type=text] {
+.search input[type=text],
+.search-mo input[type=text] {
   width: 100%;
   background-color: #EEEEEE;
   padding: 7px;
@@ -84,34 +86,39 @@ header .header-inner .logo-search .search input[type=text] {
   padding-left: 15px;
   border: 1px solid transparent;
 }
-header .header-inner .logo-search .search input[type=text]:focus::-moz-placeholder {
+.search input[type=text]:focus::-moz-placeholder, .search-mo input[type=text]:focus::-moz-placeholder {
   border: transparent;
   visibility: hidden;
   opacity: 0;
   -moz-transition: 0.3s;
   transition: 0.3s;
 }
-header .header-inner .logo-search .search input[type=text]:focus::placeholder {
+.search input[type=text]:focus::placeholder,
+.search-mo input[type=text]:focus::placeholder {
   border: transparent;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;
 }
-header .header-inner .logo-search .search input[type=text]:focus {
+.search input[type=text]:focus,
+.search-mo input[type=text]:focus {
   box-sizing: border-box;
   border-color: rgba(0, 107, 229, 0.2);
   background-color: #FFFFFF;
   box-shadow: 0 0 5px #006BE5;
 }
-header .header-inner .logo-search .search input[type=text]:focus + i {
+.search input[type=text]:focus + i,
+.search-mo input[type=text]:focus + i {
   filter: invert(29%) sepia(79%) saturate(6368%) hue-rotate(201deg) brightness(101%) contrast(106%);
 }
-header .header-inner .logo-search .search .bi {
+.search .bi,
+.search-mo .bi {
   position: absolute;
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
 }
+
 header .header-inner .logo-search .login-register-buttons {
   margin-left: auto;
 }
@@ -196,6 +203,11 @@ header .mega-navi {
   top: 100%;
   width: 100%;
   background-color: #333333;
+  display: none;
+  /* pc화면 - 모바일 노출 방지 */
+}
+header .mega-navi .search-mo,
+header .mega-navi .btn-mega-navi-close {
   display: none;
 }
 header .mega-navi .mega-navi-inner {

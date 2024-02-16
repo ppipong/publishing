@@ -5,7 +5,7 @@
 @media (max-width : 767px) {
 
     // 임시 css 
-    header,
+    // header,
     footer,
     .front-slider,
     .category-shortcut,
@@ -18,9 +18,109 @@
     .tip-tech{
         display: none;
     }
-    
     /* ############ Common CSS  ############ */
+    [class*="inner"] {
+      width: 100%;
+    }
     /* ############ header ############ */
+    header {
+      .header-inner {
+        padding : 15px 10px 0 10px;
+        .logo {
+          display: inline-block;
+          line-height: 100%;
+          img {}
+        }
+        .search {
+          display: none;
+        }
+        .login-register-buttons {}
+        .gnb {
+          font-size: 12px;
+          gap: 5px;
+          height: 40px;
+          .trigger {
+            font-size: 0;
+            transform: translate(2px,-3px);
+            &::before {
+              background: url(../images/icon-category-search.png);
+              margin-right: 0;
+            }
+          }
+          .special-navi {
+            white-space: nowrap;
+            border: 1px solid tomato;
+            width: 360px;
+            overflow-y: hidden;
+            a {
+              &:first-child::after {
+                display: none;
+              }
+            }
+          }
+        }
+        /* mega-navi */
+      }
+      .mega-navi {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        overflow-y: scroll;
+        padding-top: 60px;
+        .search-mo {
+          width: 280px;
+          margin: auto;
+        }
+        .mega-navi-inner {
+          flex-direction: column;
+          // gap: 20px;
+          .mega-navi-item {
+            &:last-child b {
+              border: none;
+            }
+            b {
+              border-bottom: 1px solid $dim-black;
+              display: block;
+              padding: 5px 15px;
+              color: $silver-black;
+              &::after {
+                content: '\F64D';
+                font-family: $bs-font;
+                float: right;
+                color: $silver-black;
+                font-size: 18px;
+              }
+              &.active {
+                color: $white;
+                &::after {
+                  content: '\F63B';
+                  color: $white;
+                }
+              }
+              &:last-child {
+                border: none;
+              }
+            }
+            .mega-navi-item-wrap {
+              display: none;
+              padding: 10px 15px;
+            }
+          }
+        }
+        .btn-mega-navi-close {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          border: none;
+          font-size: 1em;
+          background-color: transparent;
+          color: $white;
+        }
+      }
+    }
     /* ############ section : front ############ */
     /* ############ section : front-slider ############ */
 }
