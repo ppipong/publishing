@@ -2,12 +2,27 @@ $(function(){
   /* include Files */
   $('#header-include').load('../include/header.html', function(){
     /* header navi megamenu */
-    $('.trigger').click(function(){
-      $('.mega-navi').stop().slideToggle();
-    });
-    $('section').click(function(){
-      $('.mega-navi').stop().slideUp();
-    });
+   $(window).resize(function(){
+    /* 디바이스 너비 767 이상(태블릿, pc) */
+    if ($(window).innerWidth() > 767) {
+      $('.trigger').click(function(){
+        $('.mega-navi').stop().slideToggle(300);
+      });
+      $('section').click(function(){
+        $('.mega-navi').stop().slideUp(300);
+      });
+    /* 디바이스 너비 767 이하(모바일) */
+    // } else if($(window).innerWidth() < 767) {
+    } else {
+      $('.trigger').click(function(){
+        $('.mega-navi').animate({'left' : 0}, 300);
+      });
+      $('section, .btn-mega-navi-close').click(function(){
+        $('.mega-navi').animate({'left' : -300}, 300);
+      });
+    }
+   });
+
     /* header navi megamenu - MO */
     $('.mega-navi-item b').click(function(){
       $('.mega-navi-item-wrap').slideUp(200);
@@ -31,7 +46,7 @@ $(function(){
         $(this).parent().children('input').attr('type', 'password');
       }
     });
-
+    
     /* header login modal : open, hidden*/
     $('.btn-login').click(function(){
       $('.member-login-overlay').fadeIn();

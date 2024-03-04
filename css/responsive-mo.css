@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* import local scss Files */
 @import "reset.css";
 /* Setting Variables : Font Family */
@@ -65,6 +66,11 @@
     height: 100vh;
     overflow-y: scroll;
     padding-top: 60px;
+    /* mo화면 - 노출 */
+  }
+  header .mega-navi .search-mo,
+  header .mega-navi .btn-mega-navi-close {
+    display: block;
   }
   header .mega-navi .search-mo {
     width: 280px;
