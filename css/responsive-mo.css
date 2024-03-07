@@ -7,7 +7,6 @@
 @import "fonts.css";
 /* Responsive for Mobile */
 @media (max-width: 767px) {
-  footer,
   .front-slider,
   .category-shortcut,
   .focus-class,
@@ -117,6 +116,38 @@
     font-size: 1em;
     background-color: transparent;
     color: #FFFFFF;
+  }
+  /* ############ footer ############ */
+  footer {
+    padding: 30px 0;
+  }
+  footer .footer-inner .lnb-wrap {
+    flex-direction: column;
+  }
+  footer .footer-inner .lnb-wrap .footer-slogan h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #FFFFFF;
+  }
+  footer .footer-inner .lnb-wrap .lnb {
+    flex-direction: column;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-title {
+    padding: 10px 0;
+    border: 1px solid #777777;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-title::after {
+    content: "\f282";
+    font-family: bootstrap-icons;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-content {
+    padding: 5px 0;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-content a {
+    padding: 3px 0;
+  }
+  footer .footer-inner .copyright-wrap {
+    flex-direction: column;
   }
   /* ############ section : front ############ */
   /* ############ section : front-slider ############ */

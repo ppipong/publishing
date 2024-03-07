@@ -3,25 +3,29 @@ $(function(){
   $('#header-include').load('../include/header.html', function(){
     /* header navi megamenu */
    $(window).resize(function(){
+    console.log($(window).width());
     /* 디바이스 너비 767 이상(태블릿, pc) */
-    if ($(window).innerWidth() > 767) {
+    if($(window).innerWidth() > 767) {
       $('.trigger').click(function(){
+        console.log('pc이벤트');
+        $(this).toggleClass('active');
         $('.mega-navi').stop().slideToggle(300);
       });
       $('section').click(function(){
         $('.mega-navi').stop().slideUp(300);
       });
     /* 디바이스 너비 767 이하(모바일) */
-    // } else if($(window).innerWidth() < 767) {
-    } else {
+    } else if($(window).innerWidth() < 767) {
+    // } else {
       $('.trigger').click(function(){
+        console.log('mo이벤트');
         $('.mega-navi').animate({'left' : 0}, 300);
       });
       $('section, .btn-mega-navi-close').click(function(){
         $('.mega-navi').animate({'left' : -300}, 300);
       });
     }
-   });
+   }).resize();
 
     /* header navi megamenu - MO */
     $('.mega-navi-item b').click(function(){

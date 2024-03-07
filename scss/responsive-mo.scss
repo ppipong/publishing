@@ -3,10 +3,10 @@
 
 /* Responsive for Mobile */
 @media (max-width : 767px) {
-
+    // *{ border: 1px solid tomato;}
     // 임시 css 
     // header,
-    footer,
+    // footer,
     .front-slider,
     .category-shortcut,
     .focus-class,
@@ -126,6 +126,46 @@
         }
       }
     }
+    /* ############ footer ############ */
+    footer{
+      padding: 30px 0;
+      .footer-inner {
+        .lnb-wrap {
+          flex-direction: column;
+          .footer-slogan {
+            h2 {
+              text-align: center;
+              font-size: 1.8em;
+              color: $white;
+            }
+          }
+          .lnb {
+            flex-direction: column;
+            .link-item {
+              .link-item-title {
+                padding: 10px 0;
+                border: 1px solid $silver-black;
+                &::after {
+                  content: '\f282';
+                  font-family: $bs-font;
+                  float: right;
+                }
+              }
+              .link-item-content {
+                padding: 5px 0;
+                a {
+                  padding: 3px 0;
+                }
+              }
+            }
+          }
+        }
+        .copyright-wrap {
+          flex-direction: column;
+        }
+      }
+    }
+
     /* ############ section : front ############ */
     /* ############ section : front-slider ############ */
 }
