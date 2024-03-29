@@ -1,9 +1,9 @@
 $(function(){
   /* include Files */
-  $('#header-include').load('../include/header.html', function(){
+  $('#header-include').load('./include/header.html', function(){
     /* header navi megamenu */
    $(window).resize(function(){
-    console.log($(window).width());
+    // console.log($(window).width());
     /* 디바이스 너비 767 이상(태블릿, pc) */
     if($(window).innerWidth() > 767) {
       $('.trigger').click(function(){
@@ -26,6 +26,9 @@ $(function(){
       });
     }
    }).resize();
+    // $('.btn-mega-navi-close').click(function(){
+    //   $('.mega-navi').stop().slideToggle();
+    // });
 
     /* header navi megamenu - MO */
     $('.mega-navi-item b').click(function(){
@@ -33,9 +36,6 @@ $(function(){
       $(this).next().stop().slideDown(200);
       $(this).addClass('active');
       $(this).parent().siblings().children('b').removeClass('active');
-    });
-    $('.btn-mega-navi-close').click(function(){
-      $('.mega-navi').stop().slideToggle();
     });
 
     /* toggle-pw */
@@ -63,8 +63,18 @@ $(function(){
     });
   });
 
-  $('#footer-include').load('../include/footer.html');
-
+  $('#footer-include').load('./include/footer.html', function(){
+    /* footer- list menu  */
+    $('.link-item-title').click(function(){
+      $(this).next().stop().slideToggle();
+      $(this).toggleClass('active');
+    });
+    /* company info triiger */
+    $('.company-info-trigger').click(function(){
+      $('address').toggle();
+    });
+  });
+  
   /* Scroll Header fixd  */
   $(window).scroll(function(){
     if($(this).scrollTop() > 150) {
@@ -73,14 +83,51 @@ $(function(){
       $('header').removeClass();
     }
   });
-
-  /* Focus like */
-  $('.like').click(function(){
-    $(this).toggleClass('active');
+ 
+  /* Front slider */
+  $('.front-slider-items').slick({
+    infinite: true, // 마지막 슬라이드 다음에 처음으로 돌아가기
+    arrows: false,
+    dots: false,
+    // fade: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 300,
+    pauseOnHover: true // 마우스 올라갔을 때 잠시 멈춤
+  });
+  
+  /* focus class silder */
+  $('.focus-class-items').slick({
+    slidesToShow: 4, // 최초에 보이는 개수
+    slidesToScroll: 2, // 슬라이드 할때 보이는 개수
+    arrows : true,
+    dots : false,
+    // 반응형 부분 추가
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          dots: false,
+          arrows : false
+        }
+      },
+    ]
+    
   });
 
   /* early-bird-countdwon */
-  $(".early-bird-countdwon")
+  $('.early-bird-countdwon')
     .countdown("2023/11/28", function(event) {
       $(this).html(
         event.strftime('<b>종료까지</b> %D일 <em>%H</em>:<em>%M</em>:<em>%S</em> 남음')
@@ -110,24 +157,9 @@ $(function(){
     $(this).next().slideToggle();
   });
 
-  /* Front slider */
-  $('.front-slider-items').slick({
-    infinite: true, // 마지막 슬라이드 다음에 처음으로 돌아가기
-    arrows: false,
-    dots: false,
-    // fade: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 300,
-    pauseOnHover: true // 마우스 올라갔을 때 잠시 멈춤
-  });
-  
-  /* focus class silder */
-  $('.focus-class-items').slick({
-    slidesToShow: 4, // 최초에 보이는 개수
-    slidesToScroll: 2, // 슬라이드 할때 보이는 개수
-    arrows : true,
-    dots : false
+   /* Focus like */
+   $('.like').click(function(){
+    $(this).toggleClass('active');
   });
 
   /* category Detail buttons */
