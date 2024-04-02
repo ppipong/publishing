@@ -3,21 +3,6 @@
 
 /* Responsive for Mobile */
 @media (max-width : 767px) {
-  // *{ border: 1px solid tomato;}
-  // 임시 css 
-  // header,
-  // footer,
-  // .front-slider,
-  // .category-shortcut,
-  // .focus-class,
-  // .best-class,
-  // .early-bird,
-  // .early-bird-countdwon,
-  // .blog,
-  .slogan,
-  .tip-tech{
-      display: none;
-  }
   /* ############ Common CSS  ############ */
   section:not(.front-slider) {
     padding: 30px 10px;
@@ -343,11 +328,86 @@
           flex-direction: column;
           .blog-item {
             margin-bottom: 10px;
+            .thum {
+              img {}
+            }
           }
 
         }
       }
     }
   }
-  
+/* ############ section : slogan ############ */
+  .slogan {
+    .slogan-inner {
+      .slogan-content {
+        padding: 0 20px;
+        h1 {
+          font-size: 22px;
+        }
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+/* ############ section : tip-tech ############ */
+  .tip-tech {
+    .tip-tech-inner {
+      .tip-tech-content {
+        .tip-tech-wrap {
+          .tip-tech-items {
+            flex-direction: column;
+            .tip-tech-item {
+              .tip-tech-info {
+                h3 {
+                  font-size: 14px;
+                }
+                p {
+                  font-size: 13px;
+                  margin: 5px 0 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+/* ############ Category Main ############ */
+.category-class {
+  .category-class-inner {
+    .category-class-main {
+      overflow-x: hidden;
+    }
+    .category-class-detail {
+      .category-shortcut-btn-group {
+        .btn-shortcut {
+          margin: 0 3px 5px 0;
+        }
+      }
+    }
+    .category-class-wrap {
+        .focus-class-items {
+          // border: 1px solid tomato;
+          width: 550px;
+          .focus-class-item {
+            .thum {
+              height: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+/* ############ tack-course Main ############ */
+.take-course {
+  .take-course-inner {
+    flex-direction: column;
+  }
+}
+
+
 }

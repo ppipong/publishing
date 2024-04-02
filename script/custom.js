@@ -1,6 +1,6 @@
 $(function(){
   /* include Files */
-  $('#header-include').load('./include/header.html', function(){
+  $('#header-include').load('/beyond/include/header.html', function(){
     /* header navi megamenu */
    $(window).resize(function(){
     // console.log($(window).width());
@@ -63,7 +63,7 @@ $(function(){
     });
   });
 
-  $('#footer-include').load('./include/footer.html', function(){
+  $('#footer-include').load('/beyond/include/footer.html', function(){
     /* footer- list menu  */
     $('.link-item-title').click(function(){
       $(this).next().stop().slideToggle();
