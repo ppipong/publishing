@@ -2,7 +2,7 @@
 @import "reset.css", "variables", "fonts.css";
 
 /* Responsive for Mobile */
-@media (max-width : 767px) {
+@media (max-width : 768px) {
   /* ############ Common CSS  ############ */
   section:not(.front-slider) {
     padding: 30px 10px;
@@ -377,22 +377,26 @@
   }
 
 /* ############ Category Main ############ */
-.category-class {
+  .category-class {
   .category-class-inner {
-    .category-class-main {
-      overflow-x: hidden;
-    }
+    .category-class-main {}
     .category-class-detail {
+      padding-bottom: 20px;
       .category-shortcut-btn-group {
         .btn-shortcut {
           margin: 0 3px 5px 0;
         }
       }
     }
+    .category-class-sort {
+      margin: 20px 0;
+    }
     .category-class-wrap {
+      overflow-x: hidden;
         .focus-class-items {
           // border: 1px solid tomato;
           width: 550px;
+          margin-bottom: 10px;
           .focus-class-item {
             .thum {
               height: 120px;
@@ -403,11 +407,152 @@
     }
   }
 /* ############ tack-course Main ############ */
-.take-course {
-  .take-course-inner {
-    flex-direction: column;
-  }
-}
+  .take-course {
+    [class*='headline'] {
+      font-size: 15px;
+    }
+    background-color: #fff;
+    .take-course-inner {
+      flex-direction: column;
+      gap: 0;
+      > div {
+        padding: 0;
+        background-color: $white;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .cart-wrap {
+        
+        .cart-items {
+          .cart-item {
+            .thum {
+              width: 60px;
+            }
+            .cart-overview {
+              .cart-overview-header {
+                .btn-clear {
+                  font-size: .9em;
+                }
+              }
+              .cart-overview-detail {
+                flex-direction: column;
+                gap: 0;
+                .cart-overview-info {
+                  gap: 5px;
+                }
+                .cart-overview-price {
+                  text-align: initial;
+                  > * {
+                    display: inline-block;
+                  }
+                }
+              }
 
+            }
+          }
+        }
+      }
+      .payment {
+        border-top: 1px dashed $dim-gray;
+        .price-total-wrap {
+          .payment-headline {
+            margin: 20px 0;
+          }
+        }
+      }
+    }
+  }
+  /* ############ class-detail Main ############ */
+  .class-detail-image {
+    .class-detail-image-inner {
+      flex-direction: column;
+      justify-content: start;
+      height: auto;
+      padding-top: 20px;
+      .heading {
+        display: none;
+        h1 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .cover-image {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+
+    }
+  }
+  .class-detail-full {
+    background: $white;
+    .class-detail-full-inner {
+      .class-detail-full-content {
+        font-size: 14px;
+        gap: 0;
+        flex-direction: column-reverse;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        > div {
+          padding: 0;
+          background-color: $white;
+          border-radius: 0;
+          box-shadow: none;
+        }
+        .class-detail-info {
+          .class-detail-navigation {
+            top: 85px;
+            gap: 6px;
+            a {
+              font-size: 13px;
+            }
+          }
+          .class-review {
+            .class-detail-wrap {
+              .review-rating-group {
+                flex-direction: column;
+                align-items: center;
+                border-bottom: 1px dashed $dim-gray;
+                padding-bottom: 20px;
+              }
+            }
+          }
+          .class-mentor {
+            .class-detail-wrap {
+              flex-direction: column;
+              .mentor-profile-summary {
+                // gap: 5px;
+              }
+            }
+          }
+        }
+        .class-detail-sidebar {
+          position: static;
+          .class-detail-sidebar-wrap {
+            .overview {
+              .class-price {
+                justify-content: flex-end;
+                transform: none;
+                gap: 10px;
+                font-size: 14px;
+                margin: 5px 0;
+                .sale {
+                  flex :none;
+                }
+              }
+
+            }
+
+          }
+        }
+      }
+    }
+  }
 
 }

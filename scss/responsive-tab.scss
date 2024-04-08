@@ -1,0 +1,9 @@
+/* import local scss Files */
+@import "reset.css", "variables", "fonts.css";
+
+/* Responsive for Mobile */
+@media (min-width : 769px) {
+  // [class*="inner"] {
+  //   width: 100%;
+  // }
+}

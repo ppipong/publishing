@@ -6,7 +6,7 @@
 /* Setting Variables : Object Color */
 @import "fonts.css";
 /* Responsive for Mobile */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* ############ Common CSS  ############ */
   section:not(.front-slider) {
     padding: 30px 10px;
@@ -283,20 +283,132 @@
     margin: 5px 0 0 0;
   }
   /* ############ Category Main ############ */
-  .category-class .category-class-inner .category-class-main {
-    overflow-x: hidden;
+  .category-class .category-class-inner .category-class-detail {
+    padding-bottom: 20px;
   }
   .category-class .category-class-inner .category-class-detail .category-shortcut-btn-group .btn-shortcut {
     margin: 0 3px 5px 0;
   }
+  .category-class .category-class-inner .category-class-sort {
+    margin: 20px 0;
+  }
+  .category-class .category-class-inner .category-class-wrap {
+    overflow-x: hidden;
+  }
   .category-class .category-class-inner .category-class-wrap .focus-class-items {
     width: 550px;
+    margin-bottom: 10px;
   }
   .category-class .category-class-inner .category-class-wrap .focus-class-items .focus-class-item .thum {
     height: 120px;
   }
   /* ############ tack-course Main ############ */
+  .take-course {
+    background-color: #fff;
+  }
+  .take-course [class*=headline] {
+    font-size: 15px;
+  }
   .take-course .take-course-inner {
     flex-direction: column;
+    gap: 0;
+  }
+  .take-course .take-course-inner > div {
+    padding: 0;
+    background-color: #FFFFFF;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .take-course .take-course-inner .cart-wrap .cart-items .cart-item .thum {
+    width: 60px;
+  }
+  .take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-header .btn-clear {
+    font-size: 0.9em;
+  }
+  .take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail {
+    flex-direction: column;
+    gap: 0;
+  }
+  .take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail .cart-overview-info {
+    gap: 5px;
+  }
+  .take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail .cart-overview-price {
+    text-align: initial;
+  }
+  .take-course .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail .cart-overview-price > * {
+    display: inline-block;
+  }
+  .take-course .take-course-inner .payment {
+    border-top: 1px dashed #DDDDDD;
+  }
+  .take-course .take-course-inner .payment .price-total-wrap .payment-headline {
+    margin: 20px 0;
+  }
+  /* ############ class-detail Main ############ */
+  .class-detail-image .class-detail-image-inner {
+    flex-direction: column;
+    justify-content: start;
+    height: auto;
+    padding-top: 20px;
+  }
+  .class-detail-image .class-detail-image-inner .heading {
+    display: none;
+  }
+  .class-detail-image .class-detail-image-inner .heading h1 {
+    font-size: 20px;
+  }
+  .class-detail-image .class-detail-image-inner .heading p {
+    font-size: 16px;
+  }
+  .class-detail-image .class-detail-image-inner .cover-image img {
+    width: 100%;
+    height: auto;
+  }
+  .class-detail-full {
+    background: #FFFFFF;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content {
+    font-size: 14px;
+    gap: 0;
+    flex-direction: column-reverse;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content img {
+    width: 100%;
+    height: auto;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content > div {
+    padding: 0;
+    background-color: #FFFFFF;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-detail-navigation {
+    top: 85px;
+    gap: 6px;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-detail-navigation a {
+    font-size: 13px;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-review .class-detail-wrap .review-rating-group {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px dashed #DDDDDD;
+    padding-bottom: 20px;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-mentor .class-detail-wrap {
+    flex-direction: column;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-sidebar {
+    position: static;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-sidebar .class-detail-sidebar-wrap .overview .class-price {
+    justify-content: flex-end;
+    transform: none;
+    gap: 10px;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-sidebar .class-detail-sidebar-wrap .overview .class-price .sale {
+    flex: none;
   }
 }
