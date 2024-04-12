@@ -6,7 +6,7 @@
 /* Setting Variables : Object Color */
 @import "fonts.css";
 /* Responsive for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* ############ Common CSS  ############ */
   section:not(.front-slider) {
     padding: 30px 10px;
@@ -225,6 +225,9 @@
     width: 100%;
     height: auto;
   }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .invite-banner-tablet {
+    display: none;
+  }
   .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-items-outer .best-class-items {
     flex-direction: column;
     gap: 0;
@@ -260,6 +263,12 @@
   }
   .blog .blog-inner .blog-content .blog-items .blog-item {
     margin-bottom: 10px;
+  }
+  .blog .blog-inner .blog-content .blog-items .blog-item .desc .blog-outline h4 {
+    font-size: 14px;
+  }
+  .blog .blog-inner .blog-content .blog-items .blog-item .desc .blog-outline p {
+    font-size: 13px;
   }
   /* ############ section : slogan ############ */
   .slogan .slogan-inner .slogan-content {

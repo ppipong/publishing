@@ -468,6 +468,9 @@ header {
             width: 380px;
           }
         }
+        .invite-banner-tablet {
+          display: none;
+        }
       }
       .best-class-items-outer {
         display: flex;
@@ -655,7 +658,7 @@ header {
 /* ############ section : slogan ############ */
 .slogan {
   background-color: rgba($turquoise, 0.05);
-  padding: 35px 0 !important;
+  // padding: 35px 0 !important;
   .slogan-inner {
     .slogan-content {
       text-align: center;

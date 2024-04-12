@@ -2,7 +2,7 @@
 @import "reset.css", "variables", "fonts.css";
 
 /* Responsive for Mobile */
-@media (max-width : 768px) {
+@media (max-width : 767px) {
   /* ############ Common CSS  ############ */
   section:not(.front-slider) {
     padding: 30px 10px;
@@ -272,6 +272,9 @@
                 height: auto;
               }
             }
+            .invite-banner-tablet {
+              display: none;
+            }
           .best-class-items-outer {
             .best-class-items {
               flex-direction: column;
@@ -331,8 +334,17 @@
             .thum {
               img {}
             }
+            .desc {
+              .blog-outline {
+                h4 {
+                  font-size: 14px;
+                }
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
           }
-
         }
       }
     }

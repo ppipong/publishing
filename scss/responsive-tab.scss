@@ -2,8 +2,124 @@
 @import "reset.css", "variables", "fonts.css";
 
 /* Responsive for Mobile */
-@media (min-width : 769px) {
-  // [class*="inner"] {
-  //   width: 100%;
-  // }
+@media (min-width : 768px) and (max-width: 1024px) {
+  /* ############ Common CSS  ############ */
+  section:not(.front-slider) {
+    padding: 30px 10px;
+  }
+  [class*="inner"] {
+    width: 100%;
+  }
+  /* ############ header ############ */
+  header {
+    .header-inner {
+      padding : 15px 10px 0 10px;
+      .logo {
+        display: inline-block;
+        line-height: 100%;
+        img {}
+      }
+      .search {
+        width: 300px;
+      }
+      .gnb {
+        height: 55px;
+      }
+    }
+  }
+
+  .mega-navi {
+    display: block;
+    .mega-navi-inner {
+      width: 100%;
+    }
+  }
+
+  /* ############ section : front-slider ############ */
+  .category-shortcut {
+    .category-shortcut-inner {
+      .category-shortcut-items {
+        gap: 10px;
+        .category-shortcut-item {
+          height: 110px;
+          gap: 5px;
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+}
+  /* ############ section : best-class ############ */
+  .best-class {
+    .best-class-inner {
+      .best-class-content {
+        .best-class-wrap {
+          flex-direction: column-reverse;
+          .invite-banner {
+            display: none;
+          }
+          .invite-banner-tablet {
+            display: block;
+            text-align: center;
+            margin-top: 5px;
+            border-radius: 8px;
+            background-color: #AAE8F3;
+          }
+        }
+      }
+    }
+  }
+  /* ############ section : blog ############ */
+  .blog {
+    .blog-inner {
+      .blog-content {
+        .blog-items {
+          .blog-item {
+            .thum {
+              height: 150px;
+            }
+            .desc {
+              .blog-outline {
+                p {
+                  /* 특정 단위 텍스트 자르기 */
+                  white-space: normal;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 3; /* 텍스트 원하는 자를 단위 수 */
+                  -webkit-box-orient: vertical;
+                  overflow: hidden;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ############ section : slogan ############ */
+  .slogan {
+    padding: 25px !important;
+    .slogan-inner {
+      .slogan-content {
+      }
+    }
+  }
+  /* ############ section : tip-tech ############ */
+  .tip-tech {
+    .tip-tech-inner {
+      .tip-tech-content {
+        .tip-tech-wrap {
+          .tip-tech-items {
+            .tip-tech-item {
+              .thum {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
 }

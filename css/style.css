@@ -440,6 +440,9 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
 .best-class .best-class-inner .best-class-content .best-class-wrap .invite-banner img {
   width: 380px;
 }
+.best-class .best-class-inner .best-class-content .best-class-wrap .invite-banner-tablet {
+  display: none;
+}
 .best-class .best-class-inner .best-class-content .best-class-items-outer {
   display: flex;
   flex-direction: column;
@@ -607,7 +610,6 @@ header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap a:hover 
 /* ############ section : slogan ############ */
 .slogan {
   background-color: rgba(0, 210, 211, 0.05);
-  padding: 35px 0 !important;
 }
 .slogan .slogan-inner .slogan-content {
   text-align: center;
