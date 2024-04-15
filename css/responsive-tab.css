@@ -6,7 +6,7 @@
 /* Setting Variables : Object Color */
 @import "fonts.css";
 /* Responsive for Mobile */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1024px) {
   /* ############ Common CSS  ############ */
   section:not(.front-slider) {
     padding: 30px 10px;
@@ -28,11 +28,38 @@
   header .header-inner .gnb {
     height: 55px;
   }
-  .mega-navi {
+  header .mega-navi {
     display: block;
   }
-  .mega-navi .mega-navi-inner {
+  header .mega-navi .mega-navi-inner {
     width: 100%;
+    padding: 20px 0 20px 20px;
+    gap: 10px;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item {
+    font-size: 14px;
+  }
+  /* ############ section : front ############ */
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap {
+    width: 100%;
+    height: 300px;
+    padding: 0 30px;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc h1 {
+    font-size: 24px;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .pic img {
+    height: 255px;
+  }
+  /* ############ section : focus-class ############ */
+  .focus-class .slick-dots li {
+    margin: 0;
+  }
+  .focus-class .slick-dots li button:before {
+    font-size: 22px;
+  }
+  .focus-class .slick-dots li.slick-active button:before {
+    color: #ED2040;
   }
   /* ############ section : front-slider ############ */
   .category-shortcut .category-shortcut-inner .category-shortcut-items {
@@ -78,5 +105,47 @@
   /* ############ section : tip-tech ############ */
   .tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item .thum {
     display: none;
+  }
+  /* ############ footer ############ */
+  footer .footer-inner {
+    padding: 0 10px;
+  }
+  footer .footer-inner .lnb-wrap {
+    gap: 20px;
+    padding-bottom: 0;
+  }
+  footer .footer-inner .copyright-wrap {
+    padding-top: 20px;
+  }
+  footer .footer-inner .copyright-wrap .sns {
+    width: 150px;
+    text-align: center;
+  }
+  /* ############ tack-course Main ############ */
+  .take-course .take-course-inner {
+    flex-direction: column;
+  }
+  /* ############ class-detail Main ############ */
+  .class-detail-image .class-detail-image-inner {
+    padding: 0 30px;
+    height: 350px;
+  }
+  .class-detail-image .class-detail-image-inner .heading h1 {
+    font-size: 24px;
+  }
+  .class-detail-image .class-detail-image-inner .heading p {
+    font-size: 16px;
+  }
+  .class-detail-image .class-detail-image-inner .cover-image img {
+    height: 250px;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content {
+    flex-direction: column-reverse;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-detail-navigation {
+    top: 100px;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-sidebar {
+    position: static;
   }
 }
